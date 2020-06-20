@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+{{{include "head"}}}
+
+<body>
+  {{{include "header"}}}
+  <main>
+    {{#if page}}
+    <section>
+      {{{this.page}}}
+    </section>
+    {{/if}}
+    {{#each posts}}
+    <section>
+      <h2>
+        <a href="{{this.url}}">{{this.title}}</a>
+      </h2>
+      {{{this.content}}}
+      {{#if this.preview}}
+      <a href="{{this.url}}">Read More</a>
+      {{/if}}
+    </section>
+    {{/each}}
+  </main>
+  {{{include "footer"}}}
+</body>
+
+</html>

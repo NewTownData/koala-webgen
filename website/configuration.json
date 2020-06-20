@@ -1,0 +1,9 @@
+{
+  "theme": "default",
+  "title": "Static Website Generator",
+  "description": "A simple static website generator",
+  "url": "https://www.koalaspace.com/",
+  "menu": {
+    "About": "about.html"
+  }
+}

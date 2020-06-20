@@ -1,0 +1,19 @@
+<header>
+  <div class="header-logo-panel">
+    <div class="header-logo">
+      <a href="/">
+        <img src="images/logo-128.png" alt="{{title}} Logo" />
+      </a>
+      <h1>
+        <a href="/">{{title}}</a>
+      </h1>
+    </div>
+  </div>
+  <nav>
+    <ul>
+      {{#each menu}}
+      <li><a href="{{this.url}}">{{this.title}}</a></li>
+      {{/each}}
+    </ul>
+  </nav>
+</header>

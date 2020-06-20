@@ -1,0 +1,27 @@
+{
+  "name": "com.koalaspace",
+  "version": "0.0.1",
+  "description": "Koala Space - Static Website Generator",
+  "main": "bin/index.js",
+  "scripts": {
+    "start": "node bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KoalaSpace/koalaspace.git"
+  },
+  "keywords": [
+    "static",
+    "website",
+    "generator"
+  ],
+  "author": "Voyta Krizek, https://github.com/vkdot/",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/KoalaSpace/koalaspace/issues"
+  },
+  "homepage": "https://github.com/KoalaSpace/koalaspace#readme",
+  "dependencies": {
+    "handlebars": "^4.7.6"
+  }
+}
