@@ -11,7 +11,7 @@ function startServer(websiteRoot, port) {
 
   const { themePath } = contentPaths;
 
-  initTemplates(themePath);
+  initTemplates(configuration, themePath);
 
   const server = http.createServer((request, response) => {
     let pathName = '/';

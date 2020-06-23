@@ -112,6 +112,7 @@ exports[`startServer post hello-world 1`] = `
       <h1>
         <a href=\\"/hello-world.html\\">Hello World</a>
       </h1>
+      <div class=\\"post-date\\">20 June 2020</div>
       <p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus orci ac tortor consequat, nec ultrices metus
   dictum. Cras non rutrum dui, ac euismod lacus. Fusce sit amet purus justo. Ut rutrum, metus porttitor pretium aliquet,
@@ -207,6 +208,7 @@ exports[`startServer root 1`] = `
       <h1>
         <a href=\\"/hello-world.html\\">Hello World</a>
       </h1>
+      <div class=\\"post-date\\">20 June 2020</div>
       <p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus orci ac tortor consequat, nec ultrices metus
   dictum. Cras non rutrum dui, ac euismod lacus. Fusce sit amet purus justo. Ut rutrum, metus porttitor pretium aliquet,
@@ -222,6 +224,7 @@ exports[`startServer root 1`] = `
       <h1>
         <a href=\\"/test.html\\">Test</a>
       </h1>
+      <div class=\\"post-date\\">10 June 2020</div>
       <p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus orci ac tortor consequat, nec ultrices metus
   dictum. Cras non rutrum dui, ac euismod lacus. Fusce sit amet purus justo. Ut rutrum, metus porttitor pretium aliquet,

@@ -2,14 +2,25 @@
   "name": "koala-webgen",
   "version": "0.0.1",
   "description": "Koala - Static Website Generator",
-  "main": "bin/index.js",
+  "main": "src/build.js",
+  "bin": {
+    "koala-webgen": "bin/koala-webgen.js"
+  },
   "scripts": {
-    "start": "node bin/index.js",
+    "start": "node bin/koala-webgen.js start",
+    "build": "node bin/koala-webgen.js build",
+    "init": "node bin/koala-webgen.js init",
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "eslint . --ext .js",
-    "lint:fix": "eslint . --fix --ext .js"
+    "lint:fix": "eslint . --fix --ext .js",
+    "serve": "serve dist"
   },
+  "files": [
+    "bin",
+    "src",
+    "website"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KoalaSpace/koala-webgen.git"
@@ -26,6 +37,7 @@
   },
   "homepage": "https://github.com/KoalaSpace/koala-webgen#readme",
   "dependencies": {
+    "date-fns": "^2.14.0",
     "handlebars": "^4.7.6"
   },
   "devDependencies": {

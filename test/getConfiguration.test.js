@@ -6,6 +6,7 @@ const websitePath = path.join(__dirname, '..', 'website');
 describe('getConfiguration', () => {
   it('works', () => {
     expect(getConfiguration(websitePath)).toEqual({
+      dateFormat: 'd MMMM yyyy',
       description: 'A simple static website generator',
       menu: { About: '/about.html' },
       subtitle: 'Static Website Generator',

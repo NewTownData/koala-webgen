@@ -6,5 +6,6 @@
   "url": "https://www.koalaspace.com/",
   "menu": {
     "About": "/about.html"
-  }
+  },
+  "dateFormat": "d MMMM yyyy"
 }

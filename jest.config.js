@@ -1,3 +1,6 @@
 module.exports = {
-  testPathIgnorePatterns: ['<rootDir>/node_modules/'],
+  watchPathIgnorePatterns: [
+    '<rootDir>/node_modules/',
+    '<rootDir>/test/integration/',
+  ],
 };
