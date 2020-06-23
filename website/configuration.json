@@ -5,6 +5,6 @@
   "description": "A simple static website generator",
   "url": "https://www.koalaspace.com/",
   "menu": {
-    "About": "about.html"
+    "About": "/about.html"
   }
 }

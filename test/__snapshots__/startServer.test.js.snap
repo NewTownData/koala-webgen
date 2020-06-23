@@ -1,0 +1,242 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`startServer page about 1`] = `
+"<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=\\"UTF-8\\" />
+  <title>About - Koala</title>
+  <meta name=\\"robots\\" content=\\"index, follow\\" />
+  <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0, user-scalable=yes\\" />
+  <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\" />
+  <link rel=\\"canonical\\" href=\\"https://www.koalaspace.com/\\" />
+  <link rel=\\"stylesheet\\" type=\\"text/css\\" href=\\"style.css\\" />
+  <link rel=\\"apple-touch-icon\\" href=\\"images/logo-512.png\\" />
+  <link rel=\\"icon\\" sizes=\\"512x512\\" href=\\"images/logo-512.png\\" />
+  <link rel=\\"shortcut icon\\" href=\\"favicon.ico\\" />
+  <meta name=\\"description\\" content=\\"A simple static website generator\\" />
+</head>
+
+<body>
+  <header>
+  <div class=\\"header-logo-panel\\">
+    <div class=\\"header-logo\\">
+      <div class=\\"header-image\\">
+        <a href=\\"/\\">
+          <img src=\\"images/logo-128.png\\" alt=\\"Koala Logo\\" />
+        </a>
+      </div>
+      <div class=\\"header-text\\">
+        <div class=\\"header-title\\">
+          <a href=\\"/\\">Koala</a>
+        </div>
+        <div class=\\"header-subtitle\\">
+          <a href=\\"/\\">Static Website Generator</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href=\\"/about.html\\">About</a></li>
+    </ul>
+  </nav>
+</header>
+  <main>
+    <section>
+      <h1>
+        <a href=\\"/about.html\\">About</a>
+      </h1>
+      <p>
+  The project aims to create simple to use, scalable and fast static website generator.
+</p>
+<p>
+  More info at <a href=\\"https://github.com/KoalaSpace/koala\\">GitHub</a>
+</p>
+    </section>
+  </main>
+  <footer>
+  <b>Koala</b><br />
+  Static Website Generator<br />
+  <a href=\\"https://www.koalaspace.com/\\">https://www.koalaspace.com/</a>
+</footer>
+</body>
+
+</html>"
+`;
+
+exports[`startServer post hello-world 1`] = `
+"<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=\\"UTF-8\\" />
+  <title>Hello World - Koala</title>
+  <meta name=\\"robots\\" content=\\"index, follow\\" />
+  <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0, user-scalable=yes\\" />
+  <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\" />
+  <link rel=\\"canonical\\" href=\\"https://www.koalaspace.com/\\" />
+  <link rel=\\"stylesheet\\" type=\\"text/css\\" href=\\"style.css\\" />
+  <link rel=\\"apple-touch-icon\\" href=\\"images/logo-512.png\\" />
+  <link rel=\\"icon\\" sizes=\\"512x512\\" href=\\"images/logo-512.png\\" />
+  <link rel=\\"shortcut icon\\" href=\\"favicon.ico\\" />
+  <meta name=\\"description\\" content=\\"A simple static website generator\\" />
+</head>
+
+<body>
+  <header>
+  <div class=\\"header-logo-panel\\">
+    <div class=\\"header-logo\\">
+      <div class=\\"header-image\\">
+        <a href=\\"/\\">
+          <img src=\\"images/logo-128.png\\" alt=\\"Koala Logo\\" />
+        </a>
+      </div>
+      <div class=\\"header-text\\">
+        <div class=\\"header-title\\">
+          <a href=\\"/\\">Koala</a>
+        </div>
+        <div class=\\"header-subtitle\\">
+          <a href=\\"/\\">Static Website Generator</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href=\\"/about.html\\">About</a></li>
+    </ul>
+  </nav>
+</header>
+  <main>
+    <section>
+      <h1>
+        <a href=\\"/hello-world.html\\">Hello World</a>
+      </h1>
+      <p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus orci ac tortor consequat, nec ultrices metus
+  dictum. Cras non rutrum dui, ac euismod lacus. Fusce sit amet purus justo. Ut rutrum, metus porttitor pretium aliquet,
+  diam dolor fermentum nibh, tempus pretium mi justo in velit. Vestibulum porttitor erat ut congue accumsan. Aenean eu
+  lacus quam. Morbi consequat ante quis eros iaculis tempus. Orci varius natoque penatibus et magnis dis parturient
+  montes, nascetur ridiculus mus. Nulla sit amet urna vitae elit iaculis blandit. Mauris dignissim consectetur augue vel
+  varius.
+</p>
+<p>
+  Aenean facilisis sit amet neque a ultricies. Sed consectetur lorem quis lobortis tincidunt. Interdum et malesuada
+  fames ac ante ipsum primis in faucibus. Nullam at elit pulvinar, porta lorem sed, facilisis orci. Proin lacinia nisl
+  at placerat ornare. Donec ultrices dui ac varius luctus. Mauris sagittis ornare arcu, a dictum ante aliquet id.
+</p>
+<p>
+  Aliquam bibendum molestie malesuada. Duis dignissim lorem id justo ultricies blandit. Aenean in ex aliquet, feugiat
+  nisl vitae, viverra sapien. Nullam vel ex a velit auctor ultricies vulputate ac libero. Integer nec malesuada lectus,
+  sit amet maximus ante. Morbi rhoncus hendrerit purus porta sagittis. Etiam in libero auctor, porttitor tellus non,
+  tristique diam. Cras cursus felis ac dui imperdiet gravida.
+</p>
+<p>
+  Aliquam non erat tellus. Sed non diam quis velit venenatis lacinia eget a ligula. Sed rhoncus vitae quam in rhoncus.
+  Quisque congue pretium porttitor. Phasellus auctor felis nisl, quis vestibulum turpis commodo et. Maecenas non
+  scelerisque felis. Nullam vitae venenatis nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+  posuere cubilia curae; Donec faucibus tincidunt risus nec auctor. Aliquam fermentum ante at urna laoreet, sed cursus
+  ligula porttitor. Nunc eget ultricies nisi. Vestibulum ligula quam, viverra at scelerisque ultrices, lacinia quis
+  augue. Sed et lacus nec diam cursus pretium feugiat at odio. Vestibulum sit amet ipsum sed libero pellentesque
+  tincidunt eu et nisl.
+</p>
+<p>
+  Sed vitae metus tincidunt, porttitor dui a, tristique arcu. Donec sit amet nisl et diam egestas vulputate. Aenean vel
+  ullamcorper ex. Aliquam erat volutpat. Suspendisse vel urna tincidunt, eleifend quam ut, egestas purus. Donec
+  sollicitudin tempus lacus. Duis pharetra lacus magna, ac scelerisque risus convallis in. In gravida placerat elit, ut
+  laoreet neque convallis eget. Nam sollicitudin convallis ipsum, sit amet hendrerit risus iaculis molestie. Aliquam
+  dapibus nibh sit amet iaculis venenatis. Nullam vehicula volutpat eleifend. Suspendisse dolor purus, consectetur
+  mollis tellus vel, pulvinar consectetur diam. Vivamus quis nisi quis nunc cursus tempus vel in est.
+</p>
+    </section>
+  </main>
+  <footer>
+  <b>Koala</b><br />
+  Static Website Generator<br />
+  <a href=\\"https://www.koalaspace.com/\\">https://www.koalaspace.com/</a>
+</footer>
+</body>
+
+</html>"
+`;
+
+exports[`startServer root 1`] = `
+"<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=\\"UTF-8\\" />
+  <title>Koala - Static Website Generator</title>
+  <meta name=\\"robots\\" content=\\"index, follow\\" />
+  <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0, user-scalable=yes\\" />
+  <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\" />
+  <link rel=\\"canonical\\" href=\\"https://www.koalaspace.com/\\" />
+  <link rel=\\"stylesheet\\" type=\\"text/css\\" href=\\"style.css\\" />
+  <link rel=\\"apple-touch-icon\\" href=\\"images/logo-512.png\\" />
+  <link rel=\\"icon\\" sizes=\\"512x512\\" href=\\"images/logo-512.png\\" />
+  <link rel=\\"shortcut icon\\" href=\\"favicon.ico\\" />
+  <meta name=\\"description\\" content=\\"A simple static website generator\\" />
+</head>
+
+<body>
+  <header>
+  <div class=\\"header-logo-panel\\">
+    <div class=\\"header-logo\\">
+      <div class=\\"header-image\\">
+        <a href=\\"/\\">
+          <img src=\\"images/logo-128.png\\" alt=\\"Koala Logo\\" />
+        </a>
+      </div>
+      <div class=\\"header-text\\">
+        <div class=\\"header-title\\">
+          <a href=\\"/\\">Koala</a>
+        </div>
+        <div class=\\"header-subtitle\\">
+          <a href=\\"/\\">Static Website Generator</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href=\\"/about.html\\">About</a></li>
+    </ul>
+  </nav>
+</header>
+  <main>
+    <section>
+      <h1>
+        <a href=\\"/hello-world.html\\">Hello World</a>
+      </h1>
+      <p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus orci ac tortor consequat, nec ultrices metus
+  dictum. Cras non rutrum dui, ac euismod lacus. Fusce sit amet purus justo. Ut rutrum, metus porttitor pretium aliquet,
+  diam dolor fermentum nibh, tempus pretium mi justo in velit. Vestibulum porttitor erat ut congue accumsan. Aenean eu
+  lacus quam. Morbi consequat ante quis eros iaculis tempus. Orci varius natoque penatibus et magnis dis parturient
+  montes, nascetur ridiculus mus. Nulla sit amet urna vitae elit iaculis blandit. Mauris dignissim consectetur augue vel
+  varius.
+</p>
+
+      <a href=\\"/hello-world.html\\">Read More</a>
+    </section>
+    <section>
+      <h1>
+        <a href=\\"/test.html\\">Test</a>
+      </h1>
+      <p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus orci ac tortor consequat, nec ultrices metus
+  dictum. Cras non rutrum dui, ac euismod lacus. Fusce sit amet purus justo. Ut rutrum, metus porttitor pretium aliquet,
+  diam dolor fermentum nibh, tempus pretium mi justo in velit. Vestibulum porttitor erat ut congue accumsan.
+</p>
+
+      <a href=\\"/test.html\\">Read More</a>
+    </section>
+  </main>
+  <footer>
+  <b>Koala</b><br />
+  Static Website Generator<br />
+  <a href=\\"https://www.koalaspace.com/\\">https://www.koalaspace.com/</a>
+</footer>
+</body>
+
+</html>"
+`;
