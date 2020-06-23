@@ -1,5 +1,5 @@
 {
-  "name": "com.koalaspace.webgen",
+  "name": "koala-webgen",
   "version": "0.0.1",
   "description": "Koala - Static Website Generator",
   "main": "bin/index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KoalaSpace/koala.git"
+    "url": "git+https://github.com/KoalaSpace/koala-webgen.git"
   },
   "keywords": [
     "static",
@@ -22,9 +22,9 @@
   "author": "Voyta Krizek, https://github.com/vkdot/",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/KoalaSpace/koala/issues"
+    "url": "https://github.com/KoalaSpace/koala-webgen/issues"
   },
-  "homepage": "https://github.com/KoalaSpace/koala#readme",
+  "homepage": "https://github.com/KoalaSpace/koala-webgen#readme",
   "dependencies": {
     "handlebars": "^4.7.6"
   },
