@@ -1,14 +1,14 @@
 {
-  "name": "com.koalaspace",
+  "name": "com.koalaspace.webgen",
   "version": "0.0.1",
-  "description": "Koala Space - Static Website Generator",
+  "description": "Koala - Static Website Generator",
   "main": "bin/index.js",
   "scripts": {
     "start": "node bin/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KoalaSpace/koalaspace.git"
+    "url": "git+https://github.com/KoalaSpace/koala.git"
   },
   "keywords": [
     "static",
@@ -18,10 +18,19 @@
   "author": "Voyta Krizek, https://github.com/vkdot/",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/KoalaSpace/koalaspace/issues"
+    "url": "https://github.com/KoalaSpace/koala/issues"
   },
-  "homepage": "https://github.com/KoalaSpace/koalaspace#readme",
+  "homepage": "https://github.com/KoalaSpace/koala#readme",
   "dependencies": {
     "handlebars": "^4.7.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5",
+    "prettier-eslint-cli": "^5.0.0"
   }
 }

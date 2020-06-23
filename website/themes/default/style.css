@@ -85,6 +85,12 @@ header {
   line-height: 30px;
 }
 
+.header-subtitle {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: normal;
+}
+
 .header-text a {
   color: #606060;
 }
@@ -171,7 +177,7 @@ footer {
   box-sizing: border-box;
   position: relative;
   margin: 30px auto 0;
-  color: #808080;
+  color: #999999;
 }
 
 footer p {

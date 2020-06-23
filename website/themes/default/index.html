@@ -5,23 +5,50 @@
 <body>
   {{{include "header"}}}
   <main>
-    {{#if page}}
+    {{#with page}}
     <section>
-      {{{this.page}}}
+      <h1>
+        <a href="{{url}}">{{title}}</a>
+      </h1>
+      {{{content}}}
     </section>
-    {{/if}}
+    {{/with}}
     {{#each posts}}
     <section>
       <h1>
-        <a href="{{this.url}}">{{this.title}}</a>
+        <a href="{{url}}">{{title}}</a>
       </h1>
-      {{{this.content}}}
-      {{#if this.preview}}
-      <a href="{{this.url}}">Read More</a>
+      {{{content}}}
+      {{#if preview}}
+      <a href="{{url}}">Read More</a>
       {{/if}}
     </section>
     {{/each}}
   </main>
+  {{#with archives}}
+  <aside>
+    <h2>Archives</h2>
+    <ul>
+      {{#each archives}}
+      <li>
+        <a href="{{url}}">{{name}}</a>
+      </li>
+      {{/each}}
+    </ul>
+  </aside>
+  {{/with}}
+  {{#with tags}}
+  <aside>
+    <h2>Tags</h2>
+    <ul>
+      {{#each tags}}
+      <li>
+        <a href="{{url}}">{{name}}</a>
+      </li>
+      {{/each}}
+    </ul>
+  </aside>
+  {{/with}}
   {{{include "footer"}}}
 </body>
 
