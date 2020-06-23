@@ -8,7 +8,7 @@ describe('loadPosts', () => {
     expect(loadPosts(postsPath)).toEqual([
       {
         content: '<p>Paragraph 1</p>\n',
-        date: new Date('2020-06-10T09:45:00.000Z'),
+        date: new Date('2020-06-10T10:45:00'),
         preview: true,
         tags: ['tag1', 'tag2'],
         title: 'Test title',
