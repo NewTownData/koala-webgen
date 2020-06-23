@@ -34,7 +34,7 @@ switch (command) {
     break;
   case 'init':
     console.log('Creating folder structure...');
-    init(path.resolve(cwd, 'website2'));
+    init(path.resolve(cwd, 'website'));
     break;
   default:
     console.error(

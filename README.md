@@ -22,6 +22,10 @@ Core features:
 - Easy deploy to FTP or AWS S3 + CloudFront
 - Data binding for auto-generated pages (e.g. product websites)
 
+## Usage
+
+To use the Koala for your project, start by cloning the template repository at https://github.com/KoalaSpace/koala-template
+
 ## Development
 
 ### How to run the project
@@ -40,12 +44,13 @@ Connect to the website at http://localhost:3080/
 ### Release
 
 **Important Note**
+
 > This is work in progress - not yet implemented
 
 In order to build release artifact in `dist` directory, you need to run:
 
 ```bash
-npm build
+npm run build
 ```
 
 ## Project Structure
@@ -94,6 +99,7 @@ Variables are defined as HTML comments:
 ```
 
 Variable template is:
+
 ```html
 <!-- NAME: VALUE -->
 ```
@@ -105,5 +111,3 @@ Format is:
 - `title` - any text
 - `date` - `YYYY-mm-dd HH:MM:SS` (24 hour ISO format)
 - `tags` - comma-separated values
-
-
