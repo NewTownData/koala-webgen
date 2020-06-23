@@ -26,6 +26,29 @@ Core features:
 
 To use the Koala for your project, start by cloning the template repository at https://github.com/KoalaSpace/koala-template
 
+Alternatively, you can run
+
+```bash
+npm i koala-webgen
+```
+
+in your project and then use commands to
+
+- initialize the project:
+  ```bash
+  koala-webgen init
+  ```
+- start development server
+  ```bash
+  koala-webgen start
+  ```
+- build release artifacts
+  ```bash
+  koala-webgen build
+  ```
+
+See the template project for more details: https://github.com/KoalaSpace/koala-template
+
 ## Development
 
 ### How to run the project
@@ -42,10 +65,6 @@ npm start
 Connect to the website at http://localhost:3080/
 
 ### Release
-
-**Important Note**
-
-> This is work in progress - not yet implemented
 
 In order to build release artifact in `dist` directory, you need to run:
 
