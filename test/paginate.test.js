@@ -1,4 +1,3 @@
-const path = require('path');
 const paginate = require('../src/paginate');
 
 describe('paginate', () => {
