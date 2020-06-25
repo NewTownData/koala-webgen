@@ -1,7 +1,7 @@
 const path = require('path');
 const loadPosts = require('../src/loadPosts');
 
-const postsPath = path.join(__dirname, 'resources');
+const postsPath = path.join(__dirname, 'resources', 'posts');
 
 describe('loadPosts', () => {
   it('generic', () => {

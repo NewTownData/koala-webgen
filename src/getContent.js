@@ -1,18 +1,44 @@
 const path = require('path');
 const fs = require('fs');
 
-const loadPosts = require('./loadPosts');
 const loadPost = require('./loadPost');
 const loadTextFile = require('./loadTextFile');
 const detectMimeType = require('./detectMimeType');
+const handleSpecialPath = require('./handleSpecialPath');
+const { convertTag } = require('./converters');
 
-function getContent(pathName, contentPaths) {
+function getPageContent(pathName, pageFile) {
+  const pageResult = loadPost(pathName, loadTextFile(pageFile), false);
+  return {
+    type: 'html',
+    page: {
+      ...pageResult,
+    },
+    title: pageResult.title,
+    pathName,
+  };
+}
+
+function getPostContent(pathName, postFile) {
+  const postResult = loadPost(pathName, loadTextFile(postFile), false);
+  return {
+    type: 'html',
+    post: {
+      ...postResult,
+      tags: postResult.tags.map((tag) => convertTag(tag)),
+    },
+    title: postResult.title,
+    pathName,
+  };
+}
+
+function getContent(pathName, contentPaths, pageSize) {
   const { pagesPath, postsPath, staticPath, themePath } = contentPaths;
 
-  if (pathName === '/') {
-    console.log('Root');
-    // root
-    return { type: 'html', posts: loadPosts(postsPath), pathName };
+  const result = handleSpecialPath(pathName, postsPath, pageSize);
+  if (result.type !== '404') {
+    console.log(`Special path ${pathName}`);
+    return result;
   }
 
   let relativePath = pathName;
@@ -24,22 +50,14 @@ function getContent(pathName, contentPaths) {
   const pageFile = path.join(pagesPath, relativePath);
   if (fs.existsSync(pageFile)) {
     console.log(`Page ${pageFile}`);
-    return {
-      type: 'html',
-      page: loadPost(pathName, loadTextFile(pageFile), false),
-      pathName,
-    };
+    return getPageContent(pathName, pageFile);
   }
 
   // 2. check post
   const postFile = path.join(postsPath, relativePath);
   if (fs.existsSync(postFile)) {
     console.log(`Post ${postFile}`);
-    return {
-      type: 'html',
-      posts: [loadPost(pathName, loadTextFile(postFile), false)],
-      pathName,
-    };
+    return getPostContent(pathName, postFile);
   }
 
   // 3. check static
@@ -69,4 +87,4 @@ function getContent(pathName, contentPaths) {
   return { type: '404', pathName };
 }
 
-module.exports = getContent;
+module.exports = { getContent, getPostContent, getPageContent };

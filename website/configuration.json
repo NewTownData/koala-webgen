@@ -3,10 +3,10 @@
   "title": "Koala",
   "subtitle": "Static Website Generator",
   "description": "A simple static website generator",
-  "url": "https://www.koalaspace.com/",
+  "url": "https://www.koalaspace.com",
   "menu": {
     "About": "/about.html"
   },
   "dateFormat": "d MMMM yyyy",
-  "pageSize": 10
+  "pageSize": 5
 }

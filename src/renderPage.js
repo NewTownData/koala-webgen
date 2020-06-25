@@ -1,27 +1,34 @@
 const path = require('path');
 const loadMenu = require('./loadMenu');
 const { createTemplate } = require('./templates');
+const { loadTags, loadDates } = require('./loadPostsFunctions');
+const { convertTag, convertArchive } = require('./converters');
 
 function renderPage(content, configuration, contentPaths) {
-  const { themePath } = contentPaths;
+  const { postsPath, themePath } = contentPaths;
   const { title, subtitle } = configuration;
 
   const menu = loadMenu(configuration);
 
   const template = createTemplate(path.join(themePath, 'index.html'));
 
+  const tags = loadTags(postsPath).map(convertTag);
+  const archives = loadDates(postsPath).map(convertArchive);
+
   let pageTitle = `${title} - ${subtitle}`;
-  if (content.page) {
-    pageTitle = `${content.page.title} - ${title}`;
-  } else if (content.posts && content.posts.length === 1) {
-    pageTitle = `${content.posts[0].title} - ${title}`;
+  if (content.pageTitle) {
+    pageTitle = `${content.pageTitle} - ${title}`;
   }
 
   return template({
     ...configuration,
     menu,
-    ...content,
+    content,
     pageTitle,
+    navigation: {
+      tags,
+      archives,
+    },
   });
 }
 

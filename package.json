@@ -12,8 +12,10 @@
     "init": "node bin/koala-webgen.js init",
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "lint": "eslint . --ext .js",
-    "lint:fix": "eslint . --fix --ext .js"
+    "lint:fix": "eslint . --fix --ext .js",
+    "serve": "serve -c serve.json"
   },
   "files": [
     "bin",
@@ -48,6 +50,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.0.1",
     "prettier": "^2.0.5",
-    "prettier-eslint-cli": "^5.0.0"
+    "prettier-eslint-cli": "^5.0.0",
+    "serve": "^11.3.2"
   }
 }

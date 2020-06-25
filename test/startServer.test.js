@@ -79,6 +79,30 @@ describe('startServer', () => {
     expect(utf8(response.data)).toMatchSnapshot();
   });
 
+  it('page /posts/page-2.html', async () => {
+    const response = await fetch(`${urlPrefix}/posts/page-2.html`);
+    expect(response.statusCode).toBe(200);
+    expect(response.headers['content-type']).toBe('text/html; charset=utf-8');
+
+    expect(utf8(response.data)).toMatchSnapshot();
+  });
+
+  it('page /tags/number/page-1.html', async () => {
+    const response = await fetch(`${urlPrefix}/tags/number/page-1.html`);
+    expect(response.statusCode).toBe(200);
+    expect(response.headers['content-type']).toBe('text/html; charset=utf-8');
+
+    expect(utf8(response.data)).toMatchSnapshot();
+  });
+
+  it('page /archive/2019-03/page-1.html', async () => {
+    const response = await fetch(`${urlPrefix}/archive/2019-03/page-1.html`);
+    expect(response.statusCode).toBe(200);
+    expect(response.headers['content-type']).toBe('text/html; charset=utf-8');
+
+    expect(utf8(response.data)).toMatchSnapshot();
+  });
+
   it('favicon.ico', async () => {
     const response = await fetch(`${urlPrefix}/favicon.ico`);
     expect(response.statusCode).toBe(200);

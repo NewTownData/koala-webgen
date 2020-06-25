@@ -14,6 +14,10 @@ function loadPost(pathName, content, trim) {
   // clear comments and whitespace
   result = result.replace(/<!-- (.*?) -->\s*/gm, '');
 
+  if (!title || !date) {
+    throw new Error(`Cannot load title or date for ${pathName}`);
+  }
+
   return {
     title: title[1],
     url: pathName,

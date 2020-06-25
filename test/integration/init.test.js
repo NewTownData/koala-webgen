@@ -6,7 +6,7 @@ const path = require('path');
 const fs = require('fs');
 const init = require('../../src/init');
 
-const tempRoot = path.join(__dirname, '.temp');
+const tempRoot = path.join(__dirname, '.temp_init');
 const websiteRoot = path.join(tempRoot, 'website');
 
 describe('init', () => {

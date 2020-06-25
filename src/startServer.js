@@ -1,6 +1,6 @@
 const http = require('http');
 const { initTemplates } = require('./templates');
-const getContent = require('./getContent');
+const { getContent } = require('./getContent');
 const getConfiguration = require('./getConfiguration');
 const getContentPaths = require('./getContentPaths');
 const renderPage = require('./renderPage');
@@ -10,6 +10,7 @@ function startServer(websiteRoot, port) {
   const contentPaths = getContentPaths(websiteRoot, configuration);
 
   const { themePath } = contentPaths;
+  const { pageSize } = configuration;
 
   initTemplates(configuration, themePath);
 
@@ -23,7 +24,7 @@ function startServer(websiteRoot, port) {
       console.warn('Invalid URL', e);
     }
 
-    const content = getContent(pathName, contentPaths);
+    const content = getContent(pathName, contentPaths, pageSize);
     switch (content.type) {
       case 'html':
         console.log(`HTML for ${pathName}`);

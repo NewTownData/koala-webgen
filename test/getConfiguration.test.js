@@ -12,8 +12,8 @@ describe('getConfiguration', () => {
       subtitle: 'Static Website Generator',
       theme: 'default',
       title: 'Koala',
-      url: 'https://www.koalaspace.com/',
-      pageSize: 10,
+      url: 'https://www.koalaspace.com',
+      pageSize: 5,
     });
   });
 });

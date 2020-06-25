@@ -4,52 +4,12 @@
 
 <body>
   {{{include "header"}}}
-  <main>
-    {{#with page}}
-    <section>
-      <h1>
-        <a href="{{url}}">{{title}}</a>
-      </h1>
-      {{{content}}}
-    </section>
-    {{/with}}
-    {{#each posts}}
-    <section>
-      <h1>
-        <a href="{{url}}">{{title}}</a>
-      </h1>
-      <div class="post-date">{{printDate date}}</div>
-      {{{content}}}
-      {{#if preview}}
-      <a href="{{url}}">Read More</a>
-      {{/if}}
-    </section>
-    {{/each}}
-  </main>
-  {{#with archives}}
-  <aside>
-    <h2>Archives</h2>
-    <ul>
-      {{#each archives}}
-      <li>
-        <a href="{{url}}">{{name}}</a>
-      </li>
-      {{/each}}
-    </ul>
-  </aside>
+  {{{include "content"}}}
+
+  {{#with navigation}}
+  {{{include "navigation"}}}
   {{/with}}
-  {{#with tags}}
-  <aside>
-    <h2>Tags</h2>
-    <ul>
-      {{#each tags}}
-      <li>
-        <a href="{{url}}">{{name}}</a>
-      </li>
-      {{/each}}
-    </ul>
-  </aside>
-  {{/with}}
+
   {{{include "footer"}}}
 </body>
 

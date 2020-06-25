@@ -2,11 +2,23 @@ const fs = require('fs');
 const path = require('path');
 const getConfiguration = require('./getConfiguration');
 const getContentPaths = require('./getContentPaths');
-const loadTextFile = require('./loadTextFile');
-const loadPost = require('./loadPost');
 const renderPage = require('./renderPage');
 const { initTemplates } = require('./templates');
-const loadPosts = require('./loadPosts');
+const {
+  loadAllPosts,
+  loadTags,
+  loadPostsByTag,
+  loadDates,
+  loadPostsByDate,
+} = require('./loadPostsFunctions');
+const handleSpecialPath = require('./handleSpecialPath');
+const {
+  allPostsUrlFactory,
+  postsByTagUrlFactory,
+  postsByDateUrlFactory,
+  convertMonth,
+} = require('./urlFactory');
+const { getPageContent, getPostContent } = require('./getContent');
 
 function ensureParentExists(filePath) {
   const dir = path.dirname(filePath);
@@ -21,11 +33,10 @@ function copyPost(fromFile, toFile, copyConfig) {
     return;
   }
 
-  const { rootPath, render } = copyConfig;
+  const { render, urlPrefix } = copyConfig;
 
-  const url = `/${path.relative(fromFile, rootPath)}`;
-  const content = loadPost(url, loadTextFile(fromFile), false);
-  const output = render(url, content);
+  const url = `${urlPrefix}/${path.basename(fromFile)}`;
+  const output = render(url, fromFile);
   fs.writeFileSync(toFile, output);
 }
 
@@ -49,11 +60,10 @@ function copyPosts(fromPath, toPath, copyConfig) {
   items
     .filter((f) => f.isDirectory())
     .forEach((f) => {
-      copyPosts(
-        path.join(fromPath, f.name),
-        path.join(toPath, f.name),
-        copyConfig
-      );
+      copyPosts(path.join(fromPath, f.name), path.join(toPath, f.name), {
+        ...copyConfig,
+        urlPrefix: `${copyConfig.urlPrefix}/${f.name}`,
+      });
     });
 }
 
@@ -77,6 +87,92 @@ function copyAssets(fromPath, toPath) {
     });
 }
 
+function copyAllPosts(
+  postsPath,
+  pageSize,
+  destination,
+  configuration,
+  contentPaths
+) {
+  const postPages = loadAllPosts(postsPath, pageSize);
+  for (let i = 0; i < postPages.length; i += 1) {
+    const pageOutput = handleSpecialPath(
+      i === 0 ? '/' : allPostsUrlFactory()(i + 1),
+      postsPath,
+      pageSize
+    );
+    const indexOutput = renderPage(pageOutput, configuration, contentPaths);
+
+    if (i === 0) {
+      fs.writeFileSync(path.join(destination, 'index.html'), indexOutput);
+    } else {
+      const dir = path.join(destination, 'posts');
+      if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true });
+      }
+
+      fs.writeFileSync(path.join(dir, `page-${i + 1}.html`), indexOutput);
+    }
+  }
+}
+
+function copyPostsByTag(
+  tag,
+  postsPath,
+  pageSize,
+  destination,
+  configuration,
+  contentPaths
+) {
+  const postPages = loadPostsByTag(postsPath, pageSize, tag);
+  for (let i = 0; i < postPages.length; i += 1) {
+    const pageOutput = handleSpecialPath(
+      postsByTagUrlFactory(tag)(i + 1),
+      postsPath,
+      pageSize
+    );
+    const indexOutput = renderPage(pageOutput, configuration, contentPaths);
+
+    const dir = path.join(destination, 'tags', tag);
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
+
+    fs.writeFileSync(path.join(dir, `page-${i + 1}.html`), indexOutput);
+  }
+}
+
+function copyPostsByDate(
+  date,
+  postsPath,
+  pageSize,
+  destination,
+  configuration,
+  contentPaths
+) {
+  const { year, month } = date;
+  const postPages = loadPostsByDate(postsPath, pageSize, year, month);
+  for (let i = 0; i < postPages.length; i += 1) {
+    const pageOutput = handleSpecialPath(
+      postsByDateUrlFactory(date)(i + 1),
+      postsPath,
+      pageSize
+    );
+    const indexOutput = renderPage(pageOutput, configuration, contentPaths);
+
+    const dir = path.join(
+      destination,
+      'archive',
+      `${year}-${convertMonth(month)}`
+    );
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
+
+    fs.writeFileSync(path.join(dir, `page-${i + 1}.html`), indexOutput);
+  }
+}
+
 function build(websiteRoot, destination) {
   console.log(`Building ${websiteRoot} to ${destination} ...`);
 
@@ -89,51 +185,50 @@ function build(websiteRoot, destination) {
   const contentPaths = getContentPaths(websiteRoot, configuration);
 
   const { pagesPath, postsPath, staticPath, themePath } = contentPaths;
+  const { pageSize } = configuration;
 
   initTemplates(configuration, themePath);
 
   fs.mkdirSync(destination, { recursive: true });
 
-  // index.html
-  const indexOutput = renderPage(
-    {
-      type: 'html',
-      posts: loadPosts(postsPath),
-      pathName: '/',
-    },
-    configuration,
-    contentPaths
-  );
-  fs.writeFileSync(path.join(destination, 'index.html'), indexOutput);
+  copyAllPosts(postsPath, pageSize, destination, configuration, contentPaths);
+
+  const tags = loadTags(postsPath);
+  tags.forEach((tag) => {
+    copyPostsByTag(
+      tag,
+      postsPath,
+      pageSize,
+      destination,
+      configuration,
+      contentPaths
+    );
+  });
+
+  const archive = loadDates(postsPath);
+  archive.forEach((date) => {
+    copyPostsByDate(
+      date,
+      postsPath,
+      pageSize,
+      destination,
+      configuration,
+      contentPaths
+    );
+  });
 
   // pages
   copyPosts(pagesPath, destination, {
-    rootPath: pagesPath,
-    render: (url, content) =>
-      renderPage(
-        {
-          type: 'html',
-          page: content,
-          pathName: url,
-        },
-        configuration,
-        contentPaths
-      ),
+    urlPrefix: '',
+    render: (url, fromFile) =>
+      renderPage(getPageContent(url, fromFile), configuration, contentPaths),
   });
 
   // posts
   copyPosts(postsPath, destination, {
-    rootPath: pagesPath,
-    render: (url, content) =>
-      renderPage(
-        {
-          type: 'html',
-          posts: [content],
-          pathName: url,
-        },
-        configuration,
-        contentPaths
-      ),
+    urlPrefix: '',
+    render: (url, fromFile) =>
+      renderPage(getPostContent(url, fromFile), configuration, contentPaths),
   });
 
   copyAssets(staticPath, destination);
