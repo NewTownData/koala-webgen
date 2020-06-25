@@ -13,6 +13,7 @@ describe('getConfiguration', () => {
       theme: 'default',
       title: 'Koala',
       url: 'https://www.koalaspace.com/',
+      pageSize: 10,
     });
   });
 });

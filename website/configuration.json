@@ -7,5 +7,6 @@
   "menu": {
     "About": "/about.html"
   },
-  "dateFormat": "d MMMM yyyy"
+  "dateFormat": "d MMMM yyyy",
+  "pageSize": 10
 }

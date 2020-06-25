@@ -9,7 +9,8 @@ function loadPosts(postsPath) {
     .filter((name) => /.*\.html/.test(name))
     .map((name) =>
       loadPost(`/${name}`, loadTextFile(path.join(postsPath, name)), true)
-    );
+    )
+    .sort((post1, post2) => post2.date.getTime() - post1.date.getTime());
 }
 
 module.exports = loadPosts;
