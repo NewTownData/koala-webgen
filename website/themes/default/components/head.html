@@ -1,13 +1,15 @@
 <head>
+  {{#with page}}
   <meta charset="UTF-8" />
   <title>{{pageTitle}}</title>
   <meta name="robots" content="index, follow" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="canonical" href="{{url}}{{content.pathName}}" />
-  <link rel="stylesheet" type="text/css" href="/style.css" />
-  <link rel="apple-touch-icon" href="/images/logo-512.png" />
-  <link rel="icon" sizes="512x512" href="/images/logo-512.png" />
-  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="canonical" href="{{url}}{{currentPath}}" />
+  <link rel="stylesheet" type="text/css" href="{{websitePath}}style.css" />
+  <link rel="apple-touch-icon" href="{{websitePath}}images/logo-512.png" />
+  <link rel="icon" sizes="512x512" href="{{websitePath}}images/logo-512.png" />
+  <link rel="shortcut icon" href="{{websitePath}}favicon.ico" />
   <meta name="description" content="{{description}}" />
+  {{/with}}
 </head>

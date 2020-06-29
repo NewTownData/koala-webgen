@@ -1,26 +1,31 @@
 <header>
+  {{#with page}}
   <div class="header-logo-panel">
     <div class="header-logo">
       <div class="header-image">
-        <a href="/">
-          <img src="/images/logo-128.png" alt="{{title}} Logo" />
+        <a href="{{websitePath}}">
+          <img src="{{websitePath}}images/logo-128.png" alt="{{title}} Logo" />
         </a>
       </div>
       <div class="header-text">
         <div class="header-title">
-          <a href="/">{{title}}</a>
+          <a href="{{websitePath}}">{{title}}</a>
         </div>
         <div class="header-subtitle">
-          <a href="/">{{subtitle}}</a>
+          <a href="{{websitePath}}">{{subtitle}}</a>
         </div>
       </div>
     </div>
   </div>
+  {{/with}}
+
+  {{#with navigation}}
   <nav>
     <ul>
       {{#each menu}}
-      <li><a href="{{url}}">{{title}}</a></li>
+      <li><a href="{{link}}">{{name}}</a></li>
       {{/each}}
     </ul>
   </nav>
+  {{/with}}
 </header>

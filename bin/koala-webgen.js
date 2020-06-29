@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const path = require('path');
-const startServer = require('../src/startServer');
+const server = require('../src/server');
 const build = require('../src/build');
 const init = require('../src/init');
 
@@ -26,7 +26,7 @@ const command = args[0];
 switch (command) {
   case 'start':
     console.log('Starting server...');
-    startServer(websiteRoot, port);
+    server(websiteRoot, port);
     break;
   case 'build':
     console.log('Running build...');

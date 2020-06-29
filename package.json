@@ -38,6 +38,7 @@
   },
   "homepage": "https://github.com/KoalaSpace/koala-webgen#readme",
   "dependencies": {
+    "@hapi/joi": "^17.1.1",
     "date-fns": "^2.14.0",
     "handlebars": "^4.7.6"
   },
