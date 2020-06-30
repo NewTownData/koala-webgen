@@ -1,5 +1,7 @@
 <footer>
+  {{#with page}}
   <b>{{title}}</b><br />
   {{subtitle}}<br />
-  <a href="{{url}}/">{{url}}/</a>
+  <a href="{{url}}{{websitePath}}">{{url}}{{websitePath}}</a>
+  {{/with}}
 </footer>

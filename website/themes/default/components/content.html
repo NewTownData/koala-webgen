@@ -1,49 +1,49 @@
 <main>
   {{#with content}}
-  {{#if pages}}
+  {{#with posts}}
   <div class="pages">
     <h1>{{title}}</h1>
-    {{#each pages}}
+    {{#each items}}
     <section>
       <h2>
-        <a href="{{url}}">{{title}}</a>
+        <a href="{{link}}">{{title}}</a>
       </h2>
       <div class="post-date">{{printDate date}}</div>
-      {{{content}}}
-      {{#if preview}}
-      <a href="{{url}}">Read More</a>
-      {{/if}}
+      {{{body}}}
+      <a href="{{link}}">Read More</a>
     </section>
     {{/each}}
   </div>
+  {{#with pagination}}
   <nav class="pages-navigation">
     <div class="page-previous">
-      {{#if previousPageUrl}}
-      <a href="{{previousPageUrl}}">&#8592; Previous Page</a>
+      {{#if previousLink}}
+      <a href="{{previousLink}}">&#8592; Previous Page</a>
       {{/if}}
     </div>
     <div class="page-number">Page {{pageNumber}}</div>
     <div class="page-next">
-      {{#if nextPageUrl}}
-      <a href="{{nextPageUrl}}">Next Page &#8594;</a>
+      {{#if nextLink}}
+      <a href="{{nextLink}}">Next Page &#8594;</a>
       {{/if}}
     </div>
   </nav>
-  {{/if}}
+  {{/with}}
+  {{/with}}
 
   {{#with page}}
   <section>
     <h1>
-      <a href="{{url}}">{{title}}</a>
+      <a href="{{link}}">{{title}}</a>
     </h1>
-    {{{content}}}
+    {{{body}}}
   </section>
   {{/with}}
 
   {{#with post}}
   <section>
     <h1>
-      <a href="{{url}}">{{title}}</a>
+      <a href="{{link}}">{{title}}</a>
     </h1>
     <div class="post-date">{{printDate date}}</div>
     {{#if tags}}
@@ -52,13 +52,13 @@
       <ul>
         {{#each tags}}
         <li>
-          <a href="{{url}}">{{title}}</a>
+          <a href="{{link}}">{{name}}</a>
         </li>
         {{/each}}
       </ul>
     </div>
     {{/if}}
-    {{{content}}}
+    {{{body}}}
   </section>
   {{/with}}
 

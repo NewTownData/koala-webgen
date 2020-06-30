@@ -1,6 +1,6 @@
 module.exports = {
   watchPathIgnorePatterns: [
     '<rootDir>/node_modules/',
-    '<rootDir>/test/integration/',
+    '<rootDir>/test/__integration__/',
   ],
 };

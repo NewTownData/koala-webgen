@@ -1,28 +1,30 @@
 <div class="navigation">
 </div>
 
-{{#with archives}}
+{{#with navigation}}
+{{#if archive}}
 <aside>
   <h2>Archives</h2>
   <ul>
-    {{#each this}}
+    {{#each archive}}
     <li>
-      <a href="{{url}}">{{title}}</a>
+      <a href="{{link}}">{{name}}</a>
     </li>
     {{/each}}
   </ul>
 </aside>
-{{/with}}
+{{/if}}
 
-{{#with tags}}
+{{#if tags}}
 <aside>
   <h2>Tags</h2>
   <ul>
-    {{#each this}}
+    {{#each tags}}
     <li>
-      <a href="{{url}}">{{title}}</a>
+      <a href="{{link}}">{{name}}</a>
     </li>
     {{/each}}
   </ul>
 </aside>
+{{/if}}
 {{/with}}

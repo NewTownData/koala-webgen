@@ -1,0 +1,17 @@
+{
+  "theme": "default",
+  "title": "Title",
+  "subtitle": "Subtitle",
+  "description": "Description",
+  "keywords": ["test"],
+  "url": "https://www.example.com",
+  "websitePath": "/",
+  "menu": [
+    {
+      "name": "About",
+      "link": "/about.html"
+    }
+  ],
+  "dateFormat": "d MMMM yyyy",
+  "pageSize": 5
+}
