@@ -2,7 +2,7 @@
 
 **Important Note**
 
-> This project is currently under development and not suitable for production use. If you want to help with development, please, get in touch.
+> This project is currently beta (version lower than 1.0.0). Please, get in touch if you have any question or issue.
 
 ## About
 
@@ -15,12 +15,12 @@ Core features:
 - required skill set should be HTML, CSS, JavaScript
 - ideal for small websites and blogs
 
-## Long Term Goals
+## Showcase
 
-- Non-developer UI (e.g. Electron-based app)
-- WYSIWYG editor (e.g. TinyMCE)
-- Easy deploy to FTP or AWS S3 + CloudFront
-- Data binding for auto-generated pages (e.g. product websites)
+Example websites:
+
+* https://vkdot.com/blog/ (author's personal blog)
+* https://www.mobilephotoguide.com/blog/ (travel blog)
 
 ## Usage
 
@@ -130,3 +130,22 @@ Format is:
 - `title` - any text
 - `date` - `YYYY-mm-dd HH:MM:SS` (24 hour ISO format)
 - `tags` - comma-separated values
+
+## Bugs
+
+Please, open an issue at https://github.com/KoalaSpace/koala-webgen/issues
+
+## Questions
+
+If you have any question, feel free to send an e-mail at app@koalaspace.com
+
+## Long Term Goals
+
+- Non-developer UI (e.g. Electron-based app)
+- WYSIWYG editor (e.g. TinyMCE)
+- Easy deploy to FTP or AWS S3 + CloudFront
+- Data binding for auto-generated pages (e.g. product websites)
+
+## Author
+
+Voyta Krizek (Twitter [@VoytaKrizek](https://twitter.com/VoytaKrizek)) - [New Town Data Ltd](https://www.newtowndata.com/)
