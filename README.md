@@ -20,7 +20,6 @@ Core features:
 Example websites:
 
 * https://vkdot.com/blog/ (author's personal blog)
-* https://www.mobilephotoguide.com/blog/ (travel blog)
 
 ## Usage
 
@@ -148,4 +147,4 @@ If you have any question, feel free to send an e-mail at app@koalaspace.com
 
 ## Author
 
-Voyta Krizek (Twitter [@VoytaKrizek](https://twitter.com/VoytaKrizek)) - [New Town Data Ltd](https://www.newtowndata.com/)
+Voyta Krizek (Twitter [@VoytaKrizek](https://twitter.com/VoytaKrizek))
