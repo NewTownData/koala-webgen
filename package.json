@@ -1,6 +1,6 @@
 {
   "name": "koala-webgen",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Koala - Static Website Generator",
   "main": "src/build.js",
   "bin": {
