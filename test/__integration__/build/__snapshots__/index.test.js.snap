@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`build works 1`] = `
+"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\" ?>
+<rss version=\\"2.0\\">
+  <channel>
+    <title>Koala - Static Website Generator</title>
+    <description>A simple static website generator</description>
+    <link>https://www.koalaspace.com/</link>
+    <lastBuildDate>Tue, 01 Dec 2020 14:10:20 GMT</lastBuildDate>
+    <pubDate>Tue, 01 Dec 2020 14:10:20 GMT</pubDate>
+    <item>
+      <title>Hello World</title>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus orci ac tortor consequat, nec ultrices metus dictum. Cras non rutrum dui, ac euismod lacus. Fusce sit amet purus justo. Ut rutrum, metus porttitor pretium aliquet, diam dolor fermentum nibh, tempus pretium mi justo in velit. Vestibulum porttitor erat ut congue accumsan. Aenean eu lacus quam. Morbi consequat ante quis eros iaculis tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla sit amet urna vitae elit iaculis blandit. Mauris dignissim consectetur augue vel varius.</description>
+      <link>https://www.koalaspace.com/hello-world.html</link>
+      <guid>https://www.koalaspace.com/hello-world.html</guid>
+      <pubDate>Sat, 20 Jun 2020 09:45:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Test</title>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus orci ac tortor consequat, nec ultrices metus dictum. Cras non rutrum dui, ac euismod lacus. Fusce sit amet purus justo. Ut rutrum, metus porttitor pretium aliquet, diam dolor fermentum nibh, tempus pretium mi justo in velit. Vestibulum porttitor erat ut congue accumsan.</description>
+      <link>https://www.koalaspace.com/test/test.html</link>
+      <guid>https://www.koalaspace.com/test/test.html</guid>
+      <pubDate>Wed, 10 Jun 2020 09:45:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Post 5</title>
+      <description>Content 5</description>
+      <link>https://www.koalaspace.com/post5.html</link>
+      <guid>https://www.koalaspace.com/post5.html</guid>
+      <pubDate>Sun, 03 Mar 2019 16:45:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Post 4</title>
+      <description>Content 4</description>
+      <link>https://www.koalaspace.com/post4.html</link>
+      <guid>https://www.koalaspace.com/post4.html</guid>
+      <pubDate>Sat, 02 Mar 2019 16:45:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Post 3</title>
+      <description>Content 3</description>
+      <link>https://www.koalaspace.com/post3.html</link>
+      <guid>https://www.koalaspace.com/post3.html</guid>
+      <pubDate>Fri, 01 Mar 2019 16:45:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Post 2</title>
+      <description>Content 2</description>
+      <link>https://www.koalaspace.com/post2.html</link>
+      <guid>https://www.koalaspace.com/post2.html</guid>
+      <pubDate>Wed, 02 Jan 2019 16:45:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Post 1</title>
+      <description>Content 1</description>
+      <link>https://www.koalaspace.com/post1.html</link>
+      <guid>https://www.koalaspace.com/post1.html</guid>
+      <pubDate>Tue, 01 Jan 2019 16:45:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>"
+`;

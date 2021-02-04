@@ -3,6 +3,7 @@ const pageContentProvider = require('./pageContentProvider');
 const postContentProvider = require('./postContentProvider');
 const staticContentProvider = require('./staticContentProvider');
 const themeContentProvider = require('./themeContentProvider');
+const rssContentProvider = require('./rssContentProvider');
 
 const contentProviders = [
   prefixContentProvider,
@@ -10,6 +11,7 @@ const contentProviders = [
   postContentProvider,
   staticContentProvider,
   themeContentProvider,
+  rssContentProvider,
 ];
 
 module.exports = (context, pathComponents) => {

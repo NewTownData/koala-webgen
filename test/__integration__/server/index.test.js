@@ -4,12 +4,17 @@ const http = require('http');
 const { TextDecoder } = require('util');
 const server = require('../../../src/server');
 const init = require('../../../src/init');
+const now = require('../../../src/context/now');
+
+jest.mock('../../../src/context/now');
 
 const tempRoot = path.join(__dirname, '.temp_server');
 const websitePath = path.join(tempRoot, 'website');
 
 const port = 3082;
 const urlPrefix = `http://localhost:${port}`;
+
+const TestDate = new Date(Date.UTC(2020, 11, 1, 14, 10, 20));
 
 function utf8(buffer) {
   const decoder = new TextDecoder('utf-8');
@@ -60,12 +65,16 @@ function modifyConfiguration(configPath) {
 
 describe('server', () => {
   let srv = null;
+
   beforeAll(async () => {
     fs.mkdirSync(tempRoot, { recursive: true });
 
     init(websitePath);
     modifyConfiguration(path.join(websitePath, 'configuration.json'));
     srv = await server(websitePath, port);
+
+    now.mockClear();
+    now.mockImplementation(() => TestDate);
   });
 
   afterAll((done) => {
@@ -138,5 +147,12 @@ describe('server', () => {
     expect(utf8(response.data)).toEqual(
       'Internal Server Error\nError: URI malformed'
     );
+  });
+
+  it('feed.rss', async () => {
+    const response = await fetch(`${urlPrefix}/prefix/feed.rss`);
+    expect(response.statusCode).toBe(200);
+    expect(response.headers['content-type']).toBe('application/rss+xml');
+    expect(utf8(response.data)).toMatchSnapshot();
   });
 });

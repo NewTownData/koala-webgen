@@ -13,5 +13,6 @@
     }
   ],
   "dateFormat": "d MMMM yyyy",
-  "pageSize": 5
+  "pageSize": 5,
+  "feedSize": 10
 }

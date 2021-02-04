@@ -138,6 +138,14 @@ function copyPostsByDate(date, context, destination) {
   }
 }
 
+function copyFeed(context, toPath) {
+  const { configuration } = context;
+  const { websitePath } = configuration;
+
+  const { payload } = executeWithContext(context, `${websitePath}/feed.rss`);
+  fs.writeFileSync(path.join(toPath, 'feed.rss'), payload);
+}
+
 function build(websiteRoot, destination) {
   console.log(`Building ${websiteRoot} to ${destination} ...`);
 
@@ -179,6 +187,8 @@ function build(websiteRoot, destination) {
 
   copyAssets(staticPath, destination);
   copyAssets(themePath, destination);
+
+  copyFeed(context, destination);
 }
 
 module.exports = build;

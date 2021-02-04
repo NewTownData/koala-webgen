@@ -4,16 +4,30 @@
  */
 const path = require('path');
 const fs = require('fs');
+const { TextDecoder } = require('util');
 const build = require('../../../src/build');
+const now = require('../../../src/context/now');
+
+jest.mock('../../../src/context/now');
 
 const tempRoot = path.join(__dirname, '.temp_build');
 const destination = path.join(tempRoot, 'dist');
 
 const websiteRoot = path.join(__dirname, '..', '..', '..', 'website');
 
+const TestDate = new Date(Date.UTC(2020, 11, 1, 14, 10, 20));
+
+function utf8(buffer) {
+  const decoder = new TextDecoder('utf-8');
+  return decoder.decode(buffer);
+}
+
 describe('build', () => {
   beforeEach(() => {
     fs.mkdirSync(tempRoot, { recursive: true });
+
+    now.mockClear();
+    now.mockImplementation(() => TestDate);
   });
 
   afterEach(() => {
@@ -33,6 +47,7 @@ describe('build', () => {
       'about.html',
       'archive',
       'favicon.ico',
+      'feed.rss',
       'hello-world.html',
       'images',
       'index.html',
@@ -73,5 +88,9 @@ describe('build', () => {
     expect(fs.readdirSync(path.join(destination, 'test'))).toEqual([
       'test.html',
     ]);
+
+    expect(
+      utf8(fs.readFileSync(path.join(destination, 'feed.rss')))
+    ).toMatchSnapshot();
   });
 });

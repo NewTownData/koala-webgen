@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const getConfiguration = require('./getConfiguration');
+const now = require('./now');
 
 function ensurePathExists(...paths) {
   const dir = path.join(...paths);
@@ -22,5 +23,6 @@ module.exports = (websiteRoot) => {
       static: ensurePathExists(websiteRoot, 'static'),
       theme: ensurePathExists(websiteRoot, 'themes', selectedTheme),
     },
+    date: now(),
   };
 };

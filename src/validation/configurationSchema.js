@@ -7,6 +7,7 @@ module.exports = Joi.object({
   keywords: Joi.array().items(Joi.string().required()).required(),
   dateFormat: Joi.string().required(),
   pageSize: Joi.number().integer().required(),
+  feedSize: Joi.number().integer().required(),
   url: Joi.string().uri().required(),
   websitePath: Joi.string().required(),
   menu: Joi.array()

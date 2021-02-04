@@ -17,6 +17,7 @@ const exampleConfiguration = {
   ],
   dateFormat: 'd MMMM yyyy',
   pageSize: 5,
+  feedSize: 10,
 };
 
 const exampleContext = {
