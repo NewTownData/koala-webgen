@@ -1,9 +1,5 @@
 # Koala - Static Website Generator
 
-**Important Note**
-
-> This project is currently beta (version lower than 1.0.0). Please, get in touch if you have any question or issue.
-
 ## About
 
 The project aims to create simple to use, scalable and fast static website generator.
