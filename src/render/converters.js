@@ -11,7 +11,7 @@ function convertArchive(context, date) {
   } = context;
 
   return {
-    name: format(new Date(year, month - 1, 1), 'MMMM yyyy'),
+    name: format(new Date(Date.UTC(year, month - 1, 1)), 'MMMM yyyy'),
     link: `${websitePath}${postsByDateUrlFactory(date)(1)}`,
   };
 }

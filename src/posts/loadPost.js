@@ -22,12 +22,14 @@ function loadPost(postPath, content, trim) {
     title: title[1],
     link: postPath,
     date: new Date(
-      parseInt(date[1], 10),
-      parseInt(date[2], 10) - 1,
-      parseInt(date[3], 10),
-      parseInt(date[4], 10),
-      parseInt(date[5], 10),
-      parseInt(date[6], 10)
+      Date.UTC(
+        parseInt(date[1], 10),
+        parseInt(date[2], 10) - 1,
+        parseInt(date[3], 10),
+        parseInt(date[4], 10),
+        parseInt(date[5], 10),
+        parseInt(date[6], 10)
+      )
     ),
     tags: tags ? tags[1].split(',') : [],
     body: result,

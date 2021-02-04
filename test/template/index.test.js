@@ -28,7 +28,7 @@ const pageContext = {
   content: {
     post: {
       title: 'Post',
-      date: new Date(2020, 1, 20),
+      date: new Date(Date.UTC(2020, 1, 20)),
       tags: [{ name: 'Tag 1', link: '/tags/tag%201/page-1.html' }],
       body: 'world',
       link: '/x/post.html',

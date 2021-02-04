@@ -14,14 +14,14 @@ exports[`build works 1`] = `
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus orci ac tortor consequat, nec ultrices metus dictum. Cras non rutrum dui, ac euismod lacus. Fusce sit amet purus justo. Ut rutrum, metus porttitor pretium aliquet, diam dolor fermentum nibh, tempus pretium mi justo in velit. Vestibulum porttitor erat ut congue accumsan. Aenean eu lacus quam. Morbi consequat ante quis eros iaculis tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla sit amet urna vitae elit iaculis blandit. Mauris dignissim consectetur augue vel varius.</description>
       <link>https://www.koalaspace.com/hello-world.html</link>
       <guid>https://www.koalaspace.com/hello-world.html</guid>
-      <pubDate>Sat, 20 Jun 2020 09:45:00 GMT</pubDate>
+      <pubDate>Sat, 20 Jun 2020 10:45:00 GMT</pubDate>
     </item>
     <item>
       <title>Test</title>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus orci ac tortor consequat, nec ultrices metus dictum. Cras non rutrum dui, ac euismod lacus. Fusce sit amet purus justo. Ut rutrum, metus porttitor pretium aliquet, diam dolor fermentum nibh, tempus pretium mi justo in velit. Vestibulum porttitor erat ut congue accumsan.</description>
       <link>https://www.koalaspace.com/test/test.html</link>
       <guid>https://www.koalaspace.com/test/test.html</guid>
-      <pubDate>Wed, 10 Jun 2020 09:45:00 GMT</pubDate>
+      <pubDate>Wed, 10 Jun 2020 10:45:00 GMT</pubDate>
     </item>
     <item>
       <title>Post 5</title>

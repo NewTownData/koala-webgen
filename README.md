@@ -15,7 +15,7 @@ Core features:
 
 Example websites:
 
-* https://vkdot.com/blog/ (author's personal blog)
+- https://vkdot.com/blog/ (author's personal blog)
 
 ## Usage
 
@@ -101,7 +101,7 @@ You should specify page / post variables. See the section Page / Post Variables.
 Every page or post should specify the following variables:
 
 - `title` - page title
-- `date` - date of creation / publishing of the post
+- `date` - date of creation / publishing of the post in UTC timezone
 - `tags` - keywords or categories of the post (optional)
 
 Variables are defined as HTML comments:

@@ -40,23 +40,23 @@ describe('loadPosts', () => {
 
   it('loadPostsByDate 2019-01', () => {
     loadPosts.mockImplementation(() => [
-      { title: 'a', date: new Date('2020-02-03T10:00:00') },
-      { title: 'b', date: new Date('2019-02-03T10:00:00') },
-      { title: 'c', date: new Date('2019-01-01T10:00:00') },
-      { title: 'd', date: new Date('2019-01-02T10:00:00') },
-      { title: 'e', date: new Date('2019-01-03T10:00:00') },
+      { title: 'a', date: new Date('2020-02-03T10:00:00Z') },
+      { title: 'b', date: new Date('2019-02-03T10:00:00Z') },
+      { title: 'c', date: new Date('2019-01-01T10:00:00Z') },
+      { title: 'd', date: new Date('2019-01-02T10:00:00Z') },
+      { title: 'e', date: new Date('2019-01-03T10:00:00Z') },
     ]);
     expect(loadPostsByDate(context, 2019, 1)).toEqual({
       items: [
         {
           items: [
-            { title: 'c', date: new Date('2019-01-01T10:00:00') },
-            { title: 'd', date: new Date('2019-01-02T10:00:00') },
+            { title: 'c', date: new Date('2019-01-01T10:00:00Z') },
+            { title: 'd', date: new Date('2019-01-02T10:00:00Z') },
           ],
           link: '/x/archive/2019-01/page-1.html',
         },
         {
-          items: [{ title: 'e', date: new Date('2019-01-03T10:00:00') }],
+          items: [{ title: 'e', date: new Date('2019-01-03T10:00:00Z') }],
           link: '/x/archive/2019-01/page-2.html',
         },
       ],
@@ -112,11 +112,11 @@ describe('loadPosts', () => {
 
   it('loadDates', () => {
     loadPosts.mockImplementation(() => [
-      { title: 'a', date: new Date('2020-02-03T10:00:00') },
-      { title: 'b', date: new Date('2019-02-03T10:00:00') },
-      { title: 'c', date: new Date('2019-01-01T10:00:00') },
-      { title: 'd', date: new Date('2019-01-02T10:00:00') },
-      { title: 'e', date: new Date('2019-01-03T10:00:00') },
+      { title: 'a', date: new Date('2020-02-03T10:00:00Z') },
+      { title: 'b', date: new Date('2019-02-03T10:00:00Z') },
+      { title: 'c', date: new Date('2019-01-01T10:00:00Z') },
+      { title: 'd', date: new Date('2019-01-02T10:00:00Z') },
+      { title: 'e', date: new Date('2019-01-03T10:00:00Z') },
     ]);
     expect(loadDates(context)).toEqual([
       { year: 2020, month: 2 },
