@@ -9,7 +9,7 @@ exports[`server archive /archive/2019-03/page-1.html 1`] = `
   <meta name=\\"robots\\" content=\\"index, follow\\" />
   <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0, user-scalable=yes\\" />
   <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\" />
-  <link rel=\\"canonical\\" href=\\"https://www.koalaspace.com/prefix/archive/2019-03/page-1.html\\" />
+  <link rel=\\"canonical\\" href=\\"https://www.example.com/prefix/archive/2019-03/page-1.html\\" />
   <link rel=\\"stylesheet\\" type=\\"text/css\\" href=\\"/prefix/style.css\\" />
   <link rel=\\"apple-touch-icon\\" href=\\"/prefix/images/logo-512.png\\" />
   <link rel=\\"icon\\" sizes=\\"512x512\\" href=\\"/prefix/images/logo-512.png\\" />
@@ -127,7 +127,7 @@ exports[`server archive /archive/2019-03/page-1.html 1`] = `
   <footer>
   <b>Koala</b><br />
   Static Website Generator<br />
-  <a href=\\"https://www.koalaspace.com/prefix/\\">https://www.koalaspace.com/prefix/</a>
+  <a href=\\"https://www.example.com/prefix/\\">https://www.example.com/prefix/</a>
 </footer>
 </body>
 
@@ -140,56 +140,56 @@ exports[`server feed.rss 1`] = `
   <channel>
     <title>Koala - Static Website Generator</title>
     <description>A simple static website generator</description>
-    <link>https://www.koalaspace.com/prefix/</link>
+    <link>https://www.example.com/prefix/</link>
     <lastBuildDate>Tue, 01 Dec 2020 14:10:20 GMT</lastBuildDate>
     <pubDate>Tue, 01 Dec 2020 14:10:20 GMT</pubDate>
     <item>
       <title>Hello World</title>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus orci ac tortor consequat, nec ultrices metus dictum. Cras non rutrum dui, ac euismod lacus. Fusce sit amet purus justo. Ut rutrum, metus porttitor pretium aliquet, diam dolor fermentum nibh, tempus pretium mi justo in velit. Vestibulum porttitor erat ut congue accumsan. Aenean eu lacus quam. Morbi consequat ante quis eros iaculis tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla sit amet urna vitae elit iaculis blandit. Mauris dignissim consectetur augue vel varius.</description>
-      <link>https://www.koalaspace.com/prefix/hello-world.html</link>
-      <guid>https://www.koalaspace.com/prefix/hello-world.html</guid>
+      <link>https://www.example.com/prefix/hello-world.html</link>
+      <guid>https://www.example.com/prefix/hello-world.html</guid>
       <pubDate>Sat, 20 Jun 2020 10:45:00 GMT</pubDate>
     </item>
     <item>
       <title>Test</title>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus orci ac tortor consequat, nec ultrices metus dictum. Cras non rutrum dui, ac euismod lacus. Fusce sit amet purus justo. Ut rutrum, metus porttitor pretium aliquet, diam dolor fermentum nibh, tempus pretium mi justo in velit. Vestibulum porttitor erat ut congue accumsan.</description>
-      <link>https://www.koalaspace.com/prefix/test/test.html</link>
-      <guid>https://www.koalaspace.com/prefix/test/test.html</guid>
+      <link>https://www.example.com/prefix/test/test.html</link>
+      <guid>https://www.example.com/prefix/test/test.html</guid>
       <pubDate>Wed, 10 Jun 2020 10:45:00 GMT</pubDate>
     </item>
     <item>
       <title>Post 5</title>
       <description>Content 5</description>
-      <link>https://www.koalaspace.com/prefix/post5.html</link>
-      <guid>https://www.koalaspace.com/prefix/post5.html</guid>
+      <link>https://www.example.com/prefix/post5.html</link>
+      <guid>https://www.example.com/prefix/post5.html</guid>
       <pubDate>Sun, 03 Mar 2019 16:45:00 GMT</pubDate>
     </item>
     <item>
       <title>Post 4</title>
       <description>Content 4</description>
-      <link>https://www.koalaspace.com/prefix/post4.html</link>
-      <guid>https://www.koalaspace.com/prefix/post4.html</guid>
+      <link>https://www.example.com/prefix/post4.html</link>
+      <guid>https://www.example.com/prefix/post4.html</guid>
       <pubDate>Sat, 02 Mar 2019 16:45:00 GMT</pubDate>
     </item>
     <item>
       <title>Post 3</title>
       <description>Content 3</description>
-      <link>https://www.koalaspace.com/prefix/post3.html</link>
-      <guid>https://www.koalaspace.com/prefix/post3.html</guid>
+      <link>https://www.example.com/prefix/post3.html</link>
+      <guid>https://www.example.com/prefix/post3.html</guid>
       <pubDate>Fri, 01 Mar 2019 16:45:00 GMT</pubDate>
     </item>
     <item>
       <title>Post 2</title>
       <description>Content 2</description>
-      <link>https://www.koalaspace.com/prefix/post2.html</link>
-      <guid>https://www.koalaspace.com/prefix/post2.html</guid>
+      <link>https://www.example.com/prefix/post2.html</link>
+      <guid>https://www.example.com/prefix/post2.html</guid>
       <pubDate>Wed, 02 Jan 2019 16:45:00 GMT</pubDate>
     </item>
     <item>
       <title>Post 1</title>
       <description>Content 1</description>
-      <link>https://www.koalaspace.com/prefix/post1.html</link>
-      <guid>https://www.koalaspace.com/prefix/post1.html</guid>
+      <link>https://www.example.com/prefix/post1.html</link>
+      <guid>https://www.example.com/prefix/post1.html</guid>
       <pubDate>Tue, 01 Jan 2019 16:45:00 GMT</pubDate>
     </item>
   </channel>
@@ -205,7 +205,7 @@ exports[`server index 1`] = `
   <meta name=\\"robots\\" content=\\"index, follow\\" />
   <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0, user-scalable=yes\\" />
   <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\" />
-  <link rel=\\"canonical\\" href=\\"https://www.koalaspace.com/prefix/\\" />
+  <link rel=\\"canonical\\" href=\\"https://www.example.com/prefix/\\" />
   <link rel=\\"stylesheet\\" type=\\"text/css\\" href=\\"/prefix/style.css\\" />
   <link rel=\\"apple-touch-icon\\" href=\\"/prefix/images/logo-512.png\\" />
   <link rel=\\"icon\\" sizes=\\"512x512\\" href=\\"/prefix/images/logo-512.png\\" />
@@ -353,7 +353,7 @@ exports[`server index 1`] = `
   <footer>
   <b>Koala</b><br />
   Static Website Generator<br />
-  <a href=\\"https://www.koalaspace.com/prefix/\\">https://www.koalaspace.com/prefix/</a>
+  <a href=\\"https://www.example.com/prefix/\\">https://www.example.com/prefix/</a>
 </footer>
 </body>
 
@@ -369,7 +369,7 @@ exports[`server page about.html 1`] = `
   <meta name=\\"robots\\" content=\\"index, follow\\" />
   <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0, user-scalable=yes\\" />
   <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\" />
-  <link rel=\\"canonical\\" href=\\"https://www.koalaspace.com/prefix/about.html\\" />
+  <link rel=\\"canonical\\" href=\\"https://www.example.com/prefix/about.html\\" />
   <link rel=\\"stylesheet\\" type=\\"text/css\\" href=\\"/prefix/style.css\\" />
   <link rel=\\"apple-touch-icon\\" href=\\"/prefix/images/logo-512.png\\" />
   <link rel=\\"icon\\" sizes=\\"512x512\\" href=\\"/prefix/images/logo-512.png\\" />
@@ -458,7 +458,7 @@ exports[`server page about.html 1`] = `
   <footer>
   <b>Koala</b><br />
   Static Website Generator<br />
-  <a href=\\"https://www.koalaspace.com/prefix/\\">https://www.koalaspace.com/prefix/</a>
+  <a href=\\"https://www.example.com/prefix/\\">https://www.example.com/prefix/</a>
 </footer>
 </body>
 
@@ -474,7 +474,7 @@ exports[`server post test/test.html 1`] = `
   <meta name=\\"robots\\" content=\\"index, follow\\" />
   <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0, user-scalable=yes\\" />
   <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\" />
-  <link rel=\\"canonical\\" href=\\"https://www.koalaspace.com/prefix/test/test.html\\" />
+  <link rel=\\"canonical\\" href=\\"https://www.example.com/prefix/test/test.html\\" />
   <link rel=\\"stylesheet\\" type=\\"text/css\\" href=\\"/prefix/style.css\\" />
   <link rel=\\"apple-touch-icon\\" href=\\"/prefix/images/logo-512.png\\" />
   <link rel=\\"icon\\" sizes=\\"512x512\\" href=\\"/prefix/images/logo-512.png\\" />
@@ -576,7 +576,7 @@ exports[`server post test/test.html 1`] = `
   <footer>
   <b>Koala</b><br />
   Static Website Generator<br />
-  <a href=\\"https://www.koalaspace.com/prefix/\\">https://www.koalaspace.com/prefix/</a>
+  <a href=\\"https://www.example.com/prefix/\\">https://www.example.com/prefix/</a>
 </footer>
 </body>
 
@@ -592,7 +592,7 @@ exports[`server posts page-2.html 1`] = `
   <meta name=\\"robots\\" content=\\"index, follow\\" />
   <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0, user-scalable=yes\\" />
   <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\" />
-  <link rel=\\"canonical\\" href=\\"https://www.koalaspace.com/prefix/posts/page-2.html\\" />
+  <link rel=\\"canonical\\" href=\\"https://www.example.com/prefix/posts/page-2.html\\" />
   <link rel=\\"stylesheet\\" type=\\"text/css\\" href=\\"/prefix/style.css\\" />
   <link rel=\\"apple-touch-icon\\" href=\\"/prefix/images/logo-512.png\\" />
   <link rel=\\"icon\\" sizes=\\"512x512\\" href=\\"/prefix/images/logo-512.png\\" />
@@ -701,7 +701,7 @@ exports[`server posts page-2.html 1`] = `
   <footer>
   <b>Koala</b><br />
   Static Website Generator<br />
-  <a href=\\"https://www.koalaspace.com/prefix/\\">https://www.koalaspace.com/prefix/</a>
+  <a href=\\"https://www.example.com/prefix/\\">https://www.example.com/prefix/</a>
 </footer>
 </body>
 
@@ -717,7 +717,7 @@ exports[`server tags tags/hello/page-1.html 1`] = `
   <meta name=\\"robots\\" content=\\"index, follow\\" />
   <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0, user-scalable=yes\\" />
   <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\" />
-  <link rel=\\"canonical\\" href=\\"https://www.koalaspace.com/prefix/tags/hello/page-1.html\\" />
+  <link rel=\\"canonical\\" href=\\"https://www.example.com/prefix/tags/hello/page-1.html\\" />
   <link rel=\\"stylesheet\\" type=\\"text/css\\" href=\\"/prefix/style.css\\" />
   <link rel=\\"apple-touch-icon\\" href=\\"/prefix/images/logo-512.png\\" />
   <link rel=\\"icon\\" sizes=\\"512x512\\" href=\\"/prefix/images/logo-512.png\\" />
@@ -821,7 +821,7 @@ exports[`server tags tags/hello/page-1.html 1`] = `
   <footer>
   <b>Koala</b><br />
   Static Website Generator<br />
-  <a href=\\"https://www.koalaspace.com/prefix/\\">https://www.koalaspace.com/prefix/</a>
+  <a href=\\"https://www.example.com/prefix/\\">https://www.example.com/prefix/</a>
 </footer>
 </body>
 

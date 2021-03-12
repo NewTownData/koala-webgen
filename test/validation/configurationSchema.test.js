@@ -6,7 +6,7 @@ const exampleConfiguration = {
   subtitle: 'Static Website Generator',
   description: 'A simple static website generator',
   keywords: ['test'],
-  url: 'https://www.koalaspace.com',
+  url: 'https://www.example.com',
   websitePath: '/',
   menu: [
     {

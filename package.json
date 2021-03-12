@@ -24,7 +24,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KoalaSpace/koala-webgen.git"
+    "url": "git+https://github.com/NewTownData/koala-webgen.git"
   },
   "keywords": [
     "static",
@@ -34,9 +34,9 @@
   "author": "Voyta Krizek, https://github.com/vkdot/",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/KoalaSpace/koala-webgen/issues"
+    "url": "https://github.com/NewTownData/koala-webgen/issues"
   },
-  "homepage": "https://github.com/KoalaSpace/koala-webgen#readme",
+  "homepage": "https://github.com/NewTownData/koala-webgen#readme",
   "dependencies": {
     "@hapi/joi": "^17.1.1",
     "date-fns": "^2.16.1",

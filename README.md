@@ -19,7 +19,7 @@ Example websites:
 
 ## Usage
 
-To use the Koala for your project, start by cloning the template repository at https://github.com/KoalaSpace/koala-template
+To use the Koala for your project, start by cloning the template repository at https://github.com/NewTownData/koala-template
 
 Alternatively, you can run
 
@@ -42,7 +42,7 @@ in your project and then use commands to
   koala-webgen build
   ```
 
-See the template project for more details: https://github.com/KoalaSpace/koala-template
+See the template project for more details: https://github.com/NewTownData/koala-template
 
 ## Development
 
@@ -128,11 +128,11 @@ Format is:
 
 ## Bugs
 
-Please, open an issue at https://github.com/KoalaSpace/koala-webgen/issues
+Please, open an issue at https://github.com/NewTownData/koala-webgen/issues
 
 ## Questions
 
-If you have any question, feel free to send an e-mail at app@koalaspace.com
+If you have any question, feel free to send an e-mail at info@newtowndata.com
 
 ## Long Term Goals
 

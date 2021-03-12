@@ -10,7 +10,7 @@ const pageContext = {
     subtitle: 'Static Website Generator',
     description: 'A simple static website generator',
     keywords: ['test'],
-    url: 'https://www.koalaspace.com',
+    url: 'https://www.example.com',
     websitePath: '/x/',
     pageTitle: 'Post - Koala',
     currentPath: '/x/post.html',
