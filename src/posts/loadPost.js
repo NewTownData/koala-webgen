@@ -1,7 +1,8 @@
 function loadPost(postPath, content, trim) {
-  const date = /<!-- date: ([0-9]{4})-([0-9]{2})-([0-9]{2}) ([0-9]{2}):([0-9]{2}):([0-9]{2}) -->/.exec(
-    content
-  );
+  const date =
+    /<!-- date: ([0-9]{4})-([0-9]{2})-([0-9]{2}) ([0-9]{2}):([0-9]{2}):([0-9]{2}) -->/.exec(
+      content
+    );
   const tags = /<!-- tags: (.*?) -->/.exec(content);
   const title = /<!-- title: (.*?) -->/.exec(content);
 

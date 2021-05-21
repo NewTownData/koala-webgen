@@ -15,7 +15,7 @@ Core features:
 
 Example websites:
 
-- https://vkdot.com/blog/ (author's personal blog)
+- https://www.newtowndata.com/blog/ (author's personal blog)
 
 ## Usage
 
@@ -48,7 +48,7 @@ See the template project for more details: https://github.com/NewTownData/koala-
 
 ### How to run the project
 
-You need Node.JS v12 (LTS) on your machine.
+You need Node.JS v14 (LTS) on your machine.
 
 Then run the following commands to start the environment:
 
@@ -143,4 +143,4 @@ If you have any question, feel free to send an e-mail at info@newtowndata.com
 
 ## Author
 
-Voyta Krizek (Twitter [@VoytaKrizek](https://twitter.com/VoytaKrizek))
+Voyta Krizek (see Questions above for an e-mail)
