@@ -48,7 +48,7 @@ See the template project for more details: https://github.com/NewTownData/koala-
 
 ### How to run the project
 
-You need Node.JS v14 (LTS) on your machine.
+You need Node.JS v16 (LTS) on your machine.
 
 Then run the following commands to start the environment:
 

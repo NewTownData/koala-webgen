@@ -15,10 +15,10 @@ describe('init', () => {
   });
 
   afterEach(() => {
-    fs.rmdirSync(websiteRoot, {
+    fs.rmSync(websiteRoot, {
       recursive: true,
     });
-    fs.rmdirSync(tempRoot, { recursive: true });
+    fs.rmSync(tempRoot, { recursive: true });
   });
 
   it('works', () => {

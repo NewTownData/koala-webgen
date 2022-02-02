@@ -153,7 +153,7 @@ function build(websiteRoot, destination) {
 
   if (fs.existsSync(destination)) {
     console.debug(`Deleting destination ${destination}`);
-    fs.rmdirSync(destination, { recursive: true });
+    fs.rmSync(destination, { recursive: true });
   }
 
   fs.mkdirSync(destination, { recursive: true });

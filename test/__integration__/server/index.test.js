@@ -78,7 +78,7 @@ describe('server', () => {
   });
 
   afterAll((done) => {
-    fs.rmdirSync(tempRoot, { recursive: true });
+    fs.rmSync(tempRoot, { recursive: true });
     srv.close(() => {
       done();
     });

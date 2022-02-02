@@ -31,10 +31,10 @@ describe('build', () => {
   });
 
   afterEach(() => {
-    fs.rmdirSync(destination, {
+    fs.rmSync(destination, {
       recursive: true,
     });
-    fs.rmdirSync(tempRoot, { recursive: true });
+    fs.rmSync(tempRoot, { recursive: true });
   });
 
   it('works', () => {
