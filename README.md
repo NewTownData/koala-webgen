@@ -134,13 +134,6 @@ Please, open an issue at https://github.com/NewTownData/koala-webgen/issues
 
 If you have any question, feel free to send an e-mail at info@newtowndata.com
 
-## Long Term Goals
-
-- Non-developer UI (e.g. Electron-based app)
-- WYSIWYG editor (e.g. TinyMCE)
-- Easy deploy to FTP or AWS S3 + CloudFront
-- Data binding for auto-generated pages (e.g. product websites)
-
 ## Author
 
 Voyta Krizek (see Questions above for an e-mail)
