@@ -31,6 +31,7 @@ describe('createFeed', () => {
 
     const result = feed.build();
     expect(result).toBe(`<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="/feed-style.xsl" type="text/xsl"?>
 <rss version="2.0">
   <channel>
     <title>Test - Blog</title>

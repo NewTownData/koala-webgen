@@ -2,7 +2,7 @@ const createFeed = require('../feed/createFeed');
 const loadPosts = require('../posts/loadPosts');
 
 module.exports = (context, pathComponents) => {
-  if (pathComponents.length !== 1 || pathComponents[0] !== 'feed.rss') {
+  if (pathComponents.length !== 1 || pathComponents[0] !== 'feed.rss.xml') {
     return null;
   }
 
@@ -19,7 +19,7 @@ module.exports = (context, pathComponents) => {
   return {
     type: 'file',
     headers: {
-      'Content-Type': 'application/rss+xml',
+      'Content-Type': 'text/xml',
     },
     payload: feed.build(),
   };

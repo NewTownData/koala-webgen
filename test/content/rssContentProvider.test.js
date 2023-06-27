@@ -30,11 +30,11 @@ describe('rssContentProvider', () => {
           feedSize: 2,
         },
       },
-      ['feed.rss']
+      ['feed.rss.xml']
     );
     expect(result).toEqual({
       headers: {
-        'Content-Type': 'application/rss+xml',
+        'Content-Type': 'text/xml',
       },
       payload: '',
       type: 'file',
@@ -61,11 +61,11 @@ describe('rssContentProvider', () => {
           feedSize: 100,
         },
       },
-      ['feed.rss']
+      ['feed.rss.xml']
     );
     expect(result).toEqual({
       headers: {
-        'Content-Type': 'application/rss+xml',
+        'Content-Type': 'text/xml',
       },
       payload: '',
       type: 'file',

@@ -47,7 +47,8 @@ describe('build', () => {
       'about.html',
       'archive',
       'favicon.ico',
-      'feed.rss',
+      'feed-style.xsl',
+      'feed.rss.xml',
       'hello-world.html',
       'images',
       'index.html',
@@ -90,7 +91,7 @@ describe('build', () => {
     ]);
 
     expect(
-      utf8(fs.readFileSync(path.join(destination, 'feed.rss')))
+      utf8(fs.readFileSync(path.join(destination, 'feed.rss.xml')))
     ).toMatchSnapshot();
   });
 });

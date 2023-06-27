@@ -142,8 +142,11 @@ function copyFeed(context, toPath) {
   const { configuration } = context;
   const { websitePath } = configuration;
 
-  const { payload } = executeWithContext(context, `${websitePath}/feed.rss`);
-  fs.writeFileSync(path.join(toPath, 'feed.rss'), payload);
+  const { payload } = executeWithContext(
+    context,
+    `${websitePath}/feed.rss.xml`
+  );
+  fs.writeFileSync(path.join(toPath, 'feed.rss.xml'), payload);
 }
 
 function build(websiteRoot, destination) {

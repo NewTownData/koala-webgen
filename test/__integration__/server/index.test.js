@@ -149,10 +149,10 @@ describe('server', () => {
     );
   });
 
-  it('feed.rss', async () => {
-    const response = await fetch(`${urlPrefix}/prefix/feed.rss`);
+  it('feed.rss.xml', async () => {
+    const response = await fetch(`${urlPrefix}/prefix/feed.rss.xml`);
     expect(response.statusCode).toBe(200);
-    expect(response.headers['content-type']).toBe('application/rss+xml');
+    expect(response.headers['content-type']).toBe('text/xml');
     expect(utf8(response.data)).toMatchSnapshot();
   });
 });

@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`build works 1`] = `
-"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\" ?>
-<rss version=\\"2.0\\">
+"<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="/feed-style.xsl" type="text/xsl"?>
+<rss version="2.0">
   <channel>
     <title>Koala - Static Website Generator</title>
     <description>A simple static website generator</description>

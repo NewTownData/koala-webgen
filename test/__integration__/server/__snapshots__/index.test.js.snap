@@ -4,34 +4,34 @@ exports[`server archive /archive/2019-03/page-1.html 1`] = `
 "<!DOCTYPE html>
 <html>
 <head>
-  <meta charset=\\"UTF-8\\" />
+  <meta charset="UTF-8" />
   <title>Archive March 2019 - Koala</title>
-  <meta name=\\"robots\\" content=\\"index, follow\\" />
-  <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0, user-scalable=yes\\" />
-  <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\" />
-  <link rel=\\"canonical\\" href=\\"https://www.example.com/prefix/archive/2019-03/page-1.html\\" />
-  <link rel=\\"stylesheet\\" type=\\"text/css\\" href=\\"/prefix/style.css\\" />
-  <link rel=\\"apple-touch-icon\\" href=\\"/prefix/images/logo-512.png\\" />
-  <link rel=\\"icon\\" sizes=\\"512x512\\" href=\\"/prefix/images/logo-512.png\\" />
-  <link rel=\\"shortcut icon\\" href=\\"/prefix/favicon.ico\\" />
-  <meta name=\\"description\\" content=\\"A simple static website generator\\" />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="canonical" href="https://www.example.com/prefix/archive/2019-03/page-1.html" />
+  <link rel="stylesheet" type="text/css" href="/prefix/style.css" />
+  <link rel="apple-touch-icon" href="/prefix/images/logo-512.png" />
+  <link rel="icon" sizes="512x512" href="/prefix/images/logo-512.png" />
+  <link rel="shortcut icon" href="/prefix/favicon.ico" />
+  <meta name="description" content="A simple static website generator" />
 </head>
 
 <body>
   <header>
-  <div class=\\"header-logo-panel\\">
-    <div class=\\"header-logo\\">
-      <div class=\\"header-image\\">
-        <a href=\\"/prefix/\\">
-          <img src=\\"/prefix/images/logo-128.png\\" alt=\\"Koala Logo\\" />
+  <div class="header-logo-panel">
+    <div class="header-logo">
+      <div class="header-image">
+        <a href="/prefix/">
+          <img src="/prefix/images/logo-128.png" alt="Koala Logo" />
         </a>
       </div>
-      <div class=\\"header-text\\">
-        <div class=\\"header-title\\">
-          <a href=\\"/prefix/\\">Koala</a>
+      <div class="header-text">
+        <div class="header-title">
+          <a href="/prefix/">Koala</a>
         </div>
-        <div class=\\"header-subtitle\\">
-          <a href=\\"/prefix/\\">Static Website Generator</a>
+        <div class="header-subtitle">
+          <a href="/prefix/">Static Website Generator</a>
         </div>
       </div>
     </div>
@@ -39,69 +39,69 @@ exports[`server archive /archive/2019-03/page-1.html 1`] = `
 
   <nav>
     <ul>
-      <li><a href=\\"/prefix/about.html\\">About</a></li>
+      <li><a href="/prefix/about.html">About</a></li>
     </ul>
   </nav>
 </header>
   <main>
-  <div class=\\"pages\\">
+  <div class="pages">
     <h1>Archive March 2019</h1>
     <section>
       <h2>
-        <a href=\\"/prefix/post5.html\\">Post 5</a>
+        <a href="/prefix/post5.html">Post 5</a>
       </h2>
-      <div class=\\"post-date\\">3 March 2019</div>
+      <div class="post-date">3 March 2019</div>
       <p>
   Content 5
 </p>
-      <a href=\\"/prefix/post5.html\\">Read More</a>
+      <a href="/prefix/post5.html">Read More</a>
     </section>
     <section>
       <h2>
-        <a href=\\"/prefix/post4.html\\">Post 4</a>
+        <a href="/prefix/post4.html">Post 4</a>
       </h2>
-      <div class=\\"post-date\\">2 March 2019</div>
+      <div class="post-date">2 March 2019</div>
       <p>
   Content 4
 </p>
-      <a href=\\"/prefix/post4.html\\">Read More</a>
+      <a href="/prefix/post4.html">Read More</a>
     </section>
     <section>
       <h2>
-        <a href=\\"/prefix/post3.html\\">Post 3</a>
+        <a href="/prefix/post3.html">Post 3</a>
       </h2>
-      <div class=\\"post-date\\">1 March 2019</div>
+      <div class="post-date">1 March 2019</div>
       <p>
   Content 3
 </p>
-      <a href=\\"/prefix/post3.html\\">Read More</a>
+      <a href="/prefix/post3.html">Read More</a>
     </section>
   </div>
-  <nav class=\\"pages-navigation\\">
-    <div class=\\"page-previous\\">
+  <nav class="pages-navigation">
+    <div class="page-previous">
     </div>
-    <div class=\\"page-number\\">Page 1</div>
-    <div class=\\"page-next\\">
+    <div class="page-number">Page 1</div>
+    <div class="page-next">
     </div>
   </nav>
 
 
 
 </main>
-  <div class=\\"navigation\\">
+  <div class="navigation">
 </div>
 
 <aside>
   <h2>Archives</h2>
   <ul>
     <li>
-      <a href=\\"/prefix/archive/2020-06/page-1.html\\">June 2020</a>
+      <a href="/prefix/archive/2020-06/page-1.html">June 2020</a>
     </li>
     <li>
-      <a href=\\"/prefix/archive/2019-03/page-1.html\\">March 2019</a>
+      <a href="/prefix/archive/2019-03/page-1.html">March 2019</a>
     </li>
     <li>
-      <a href=\\"/prefix/archive/2019-01/page-1.html\\">January 2019</a>
+      <a href="/prefix/archive/2019-01/page-1.html">January 2019</a>
     </li>
   </ul>
 </aside>
@@ -110,16 +110,16 @@ exports[`server archive /archive/2019-03/page-1.html 1`] = `
   <h2>Tags</h2>
   <ul>
     <li>
-      <a href=\\"/prefix/tags/hello/page-1.html\\">hello</a>
+      <a href="/prefix/tags/hello/page-1.html">hello</a>
     </li>
     <li>
-      <a href=\\"/prefix/tags/intro/page-1.html\\">intro</a>
+      <a href="/prefix/tags/intro/page-1.html">intro</a>
     </li>
     <li>
-      <a href=\\"/prefix/tags/number/page-1.html\\">number</a>
+      <a href="/prefix/tags/number/page-1.html">number</a>
     </li>
     <li>
-      <a href=\\"/prefix/tags/test/page-1.html\\">test</a>
+      <a href="/prefix/tags/test/page-1.html">test</a>
     </li>
   </ul>
 </aside>
@@ -127,16 +127,17 @@ exports[`server archive /archive/2019-03/page-1.html 1`] = `
   <footer>
   <b>Koala</b><br />
   Static Website Generator<br />
-  <a href=\\"https://www.example.com/prefix/\\">https://www.example.com/prefix/</a>
+  <a href="https://www.example.com/prefix/">https://www.example.com/prefix/</a>
 </footer>
 </body>
 
 </html>"
 `;
 
-exports[`server feed.rss 1`] = `
-"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\" ?>
-<rss version=\\"2.0\\">
+exports[`server feed.rss.xml 1`] = `
+"<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="/prefix/feed-style.xsl" type="text/xsl"?>
+<rss version="2.0">
   <channel>
     <title>Koala - Static Website Generator</title>
     <description>A simple static website generator</description>
@@ -200,34 +201,34 @@ exports[`server index 1`] = `
 "<!DOCTYPE html>
 <html>
 <head>
-  <meta charset=\\"UTF-8\\" />
+  <meta charset="UTF-8" />
   <title>Koala - Static Website Generator</title>
-  <meta name=\\"robots\\" content=\\"index, follow\\" />
-  <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0, user-scalable=yes\\" />
-  <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\" />
-  <link rel=\\"canonical\\" href=\\"https://www.example.com/prefix/\\" />
-  <link rel=\\"stylesheet\\" type=\\"text/css\\" href=\\"/prefix/style.css\\" />
-  <link rel=\\"apple-touch-icon\\" href=\\"/prefix/images/logo-512.png\\" />
-  <link rel=\\"icon\\" sizes=\\"512x512\\" href=\\"/prefix/images/logo-512.png\\" />
-  <link rel=\\"shortcut icon\\" href=\\"/prefix/favicon.ico\\" />
-  <meta name=\\"description\\" content=\\"A simple static website generator\\" />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="canonical" href="https://www.example.com/prefix/" />
+  <link rel="stylesheet" type="text/css" href="/prefix/style.css" />
+  <link rel="apple-touch-icon" href="/prefix/images/logo-512.png" />
+  <link rel="icon" sizes="512x512" href="/prefix/images/logo-512.png" />
+  <link rel="shortcut icon" href="/prefix/favicon.ico" />
+  <meta name="description" content="A simple static website generator" />
 </head>
 
 <body>
   <header>
-  <div class=\\"header-logo-panel\\">
-    <div class=\\"header-logo\\">
-      <div class=\\"header-image\\">
-        <a href=\\"/prefix/\\">
-          <img src=\\"/prefix/images/logo-128.png\\" alt=\\"Koala Logo\\" />
+  <div class="header-logo-panel">
+    <div class="header-logo">
+      <div class="header-image">
+        <a href="/prefix/">
+          <img src="/prefix/images/logo-128.png" alt="Koala Logo" />
         </a>
       </div>
-      <div class=\\"header-text\\">
-        <div class=\\"header-title\\">
-          <a href=\\"/prefix/\\">Koala</a>
+      <div class="header-text">
+        <div class="header-title">
+          <a href="/prefix/">Koala</a>
         </div>
-        <div class=\\"header-subtitle\\">
-          <a href=\\"/prefix/\\">Static Website Generator</a>
+        <div class="header-subtitle">
+          <a href="/prefix/">Static Website Generator</a>
         </div>
       </div>
     </div>
@@ -235,18 +236,18 @@ exports[`server index 1`] = `
 
   <nav>
     <ul>
-      <li><a href=\\"/prefix/about.html\\">About</a></li>
+      <li><a href="/prefix/about.html">About</a></li>
     </ul>
   </nav>
 </header>
   <main>
-  <div class=\\"pages\\">
+  <div class="pages">
     <h1>Posts</h1>
     <section>
       <h2>
-        <a href=\\"/prefix/hello-world.html\\">Hello World</a>
+        <a href="/prefix/hello-world.html">Hello World</a>
       </h2>
-      <div class=\\"post-date\\">20 June 2020</div>
+      <div class="post-date">20 June 2020</div>
       <p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus orci ac tortor consequat, nec ultrices metus
   dictum. Cras non rutrum dui, ac euismod lacus. Fusce sit amet purus justo. Ut rutrum, metus porttitor pretium aliquet,
@@ -256,78 +257,78 @@ exports[`server index 1`] = `
   varius.
 </p>
 
-      <a href=\\"/prefix/hello-world.html\\">Read More</a>
+      <a href="/prefix/hello-world.html">Read More</a>
     </section>
     <section>
       <h2>
-        <a href=\\"/prefix/test/test.html\\">Test</a>
+        <a href="/prefix/test/test.html">Test</a>
       </h2>
-      <div class=\\"post-date\\">10 June 2020</div>
+      <div class="post-date">10 June 2020</div>
       <p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus orci ac tortor consequat, nec ultrices metus
   dictum. Cras non rutrum dui, ac euismod lacus. Fusce sit amet purus justo. Ut rutrum, metus porttitor pretium aliquet,
   diam dolor fermentum nibh, tempus pretium mi justo in velit. Vestibulum porttitor erat ut congue accumsan.
 </p>
 
-      <a href=\\"/prefix/test/test.html\\">Read More</a>
+      <a href="/prefix/test/test.html">Read More</a>
     </section>
     <section>
       <h2>
-        <a href=\\"/prefix/post5.html\\">Post 5</a>
+        <a href="/prefix/post5.html">Post 5</a>
       </h2>
-      <div class=\\"post-date\\">3 March 2019</div>
+      <div class="post-date">3 March 2019</div>
       <p>
   Content 5
 </p>
-      <a href=\\"/prefix/post5.html\\">Read More</a>
+      <a href="/prefix/post5.html">Read More</a>
     </section>
     <section>
       <h2>
-        <a href=\\"/prefix/post4.html\\">Post 4</a>
+        <a href="/prefix/post4.html">Post 4</a>
       </h2>
-      <div class=\\"post-date\\">2 March 2019</div>
+      <div class="post-date">2 March 2019</div>
       <p>
   Content 4
 </p>
-      <a href=\\"/prefix/post4.html\\">Read More</a>
+      <a href="/prefix/post4.html">Read More</a>
     </section>
     <section>
       <h2>
-        <a href=\\"/prefix/post3.html\\">Post 3</a>
+        <a href="/prefix/post3.html">Post 3</a>
       </h2>
-      <div class=\\"post-date\\">1 March 2019</div>
+      <div class="post-date">1 March 2019</div>
       <p>
   Content 3
 </p>
-      <a href=\\"/prefix/post3.html\\">Read More</a>
+      <a href="/prefix/post3.html">Read More</a>
     </section>
   </div>
-  <nav class=\\"pages-navigation\\">
-    <div class=\\"page-previous\\">
+  <nav class="pages-navigation">
+    <div class="page-previous">
     </div>
-    <div class=\\"page-number\\">Page 1</div>
-    <div class=\\"page-next\\">
-      <a href=\\"/prefix/posts/page-2.html\\">Next Page &#8594;</a>
+    <div class="page-number">Page 1</div>
+    <div class="page-next">
+      <a href="/prefix/posts/page-2.html">Next Page &#8594;</a>
     </div>
   </nav>
 
 
 
 </main>
-  <div class=\\"navigation\\">
+  <div class="navigation">
 </div>
 
 <aside>
   <h2>Archives</h2>
   <ul>
     <li>
-      <a href=\\"/prefix/archive/2020-06/page-1.html\\">June 2020</a>
+      <a href="/prefix/archive/2020-06/page-1.html">June 2020</a>
     </li>
     <li>
-      <a href=\\"/prefix/archive/2019-03/page-1.html\\">March 2019</a>
+      <a href="/prefix/archive/2019-03/page-1.html">March 2019</a>
     </li>
     <li>
-      <a href=\\"/prefix/archive/2019-01/page-1.html\\">January 2019</a>
+      <a href="/prefix/archive/2019-01/page-1.html">January 2019</a>
     </li>
   </ul>
 </aside>
@@ -336,16 +337,16 @@ exports[`server index 1`] = `
   <h2>Tags</h2>
   <ul>
     <li>
-      <a href=\\"/prefix/tags/hello/page-1.html\\">hello</a>
+      <a href="/prefix/tags/hello/page-1.html">hello</a>
     </li>
     <li>
-      <a href=\\"/prefix/tags/intro/page-1.html\\">intro</a>
+      <a href="/prefix/tags/intro/page-1.html">intro</a>
     </li>
     <li>
-      <a href=\\"/prefix/tags/number/page-1.html\\">number</a>
+      <a href="/prefix/tags/number/page-1.html">number</a>
     </li>
     <li>
-      <a href=\\"/prefix/tags/test/page-1.html\\">test</a>
+      <a href="/prefix/tags/test/page-1.html">test</a>
     </li>
   </ul>
 </aside>
@@ -353,7 +354,7 @@ exports[`server index 1`] = `
   <footer>
   <b>Koala</b><br />
   Static Website Generator<br />
-  <a href=\\"https://www.example.com/prefix/\\">https://www.example.com/prefix/</a>
+  <a href="https://www.example.com/prefix/">https://www.example.com/prefix/</a>
 </footer>
 </body>
 
@@ -364,34 +365,34 @@ exports[`server page about.html 1`] = `
 "<!DOCTYPE html>
 <html>
 <head>
-  <meta charset=\\"UTF-8\\" />
+  <meta charset="UTF-8" />
   <title>About - Koala</title>
-  <meta name=\\"robots\\" content=\\"index, follow\\" />
-  <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0, user-scalable=yes\\" />
-  <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\" />
-  <link rel=\\"canonical\\" href=\\"https://www.example.com/prefix/about.html\\" />
-  <link rel=\\"stylesheet\\" type=\\"text/css\\" href=\\"/prefix/style.css\\" />
-  <link rel=\\"apple-touch-icon\\" href=\\"/prefix/images/logo-512.png\\" />
-  <link rel=\\"icon\\" sizes=\\"512x512\\" href=\\"/prefix/images/logo-512.png\\" />
-  <link rel=\\"shortcut icon\\" href=\\"/prefix/favicon.ico\\" />
-  <meta name=\\"description\\" content=\\"A simple static website generator\\" />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="canonical" href="https://www.example.com/prefix/about.html" />
+  <link rel="stylesheet" type="text/css" href="/prefix/style.css" />
+  <link rel="apple-touch-icon" href="/prefix/images/logo-512.png" />
+  <link rel="icon" sizes="512x512" href="/prefix/images/logo-512.png" />
+  <link rel="shortcut icon" href="/prefix/favicon.ico" />
+  <meta name="description" content="A simple static website generator" />
 </head>
 
 <body>
   <header>
-  <div class=\\"header-logo-panel\\">
-    <div class=\\"header-logo\\">
-      <div class=\\"header-image\\">
-        <a href=\\"/prefix/\\">
-          <img src=\\"/prefix/images/logo-128.png\\" alt=\\"Koala Logo\\" />
+  <div class="header-logo-panel">
+    <div class="header-logo">
+      <div class="header-image">
+        <a href="/prefix/">
+          <img src="/prefix/images/logo-128.png" alt="Koala Logo" />
         </a>
       </div>
-      <div class=\\"header-text\\">
-        <div class=\\"header-title\\">
-          <a href=\\"/prefix/\\">Koala</a>
+      <div class="header-text">
+        <div class="header-title">
+          <a href="/prefix/">Koala</a>
         </div>
-        <div class=\\"header-subtitle\\">
-          <a href=\\"/prefix/\\">Static Website Generator</a>
+        <div class="header-subtitle">
+          <a href="/prefix/">Static Website Generator</a>
         </div>
       </div>
     </div>
@@ -399,7 +400,7 @@ exports[`server page about.html 1`] = `
 
   <nav>
     <ul>
-      <li><a href=\\"/prefix/about.html\\">About</a></li>
+      <li><a href="/prefix/about.html">About</a></li>
     </ul>
   </nav>
 </header>
@@ -407,32 +408,32 @@ exports[`server page about.html 1`] = `
 
   <section>
     <h1>
-      <a href=\\"/prefix/about.html\\">About</a>
+      <a href="/prefix/about.html">About</a>
     </h1>
     <p>
   The project aims to create simple to use, scalable and fast static website generator.
 </p>
 <p>
-  More info at <a href=\\"https://github.com/KoalaSpace/koala-webgen\\">GitHub</a>
+  More info at <a href="https://github.com/KoalaSpace/koala-webgen">GitHub</a>
 </p>
   </section>
 
 
 </main>
-  <div class=\\"navigation\\">
+  <div class="navigation">
 </div>
 
 <aside>
   <h2>Archives</h2>
   <ul>
     <li>
-      <a href=\\"/prefix/archive/2020-06/page-1.html\\">June 2020</a>
+      <a href="/prefix/archive/2020-06/page-1.html">June 2020</a>
     </li>
     <li>
-      <a href=\\"/prefix/archive/2019-03/page-1.html\\">March 2019</a>
+      <a href="/prefix/archive/2019-03/page-1.html">March 2019</a>
     </li>
     <li>
-      <a href=\\"/prefix/archive/2019-01/page-1.html\\">January 2019</a>
+      <a href="/prefix/archive/2019-01/page-1.html">January 2019</a>
     </li>
   </ul>
 </aside>
@@ -441,16 +442,16 @@ exports[`server page about.html 1`] = `
   <h2>Tags</h2>
   <ul>
     <li>
-      <a href=\\"/prefix/tags/hello/page-1.html\\">hello</a>
+      <a href="/prefix/tags/hello/page-1.html">hello</a>
     </li>
     <li>
-      <a href=\\"/prefix/tags/intro/page-1.html\\">intro</a>
+      <a href="/prefix/tags/intro/page-1.html">intro</a>
     </li>
     <li>
-      <a href=\\"/prefix/tags/number/page-1.html\\">number</a>
+      <a href="/prefix/tags/number/page-1.html">number</a>
     </li>
     <li>
-      <a href=\\"/prefix/tags/test/page-1.html\\">test</a>
+      <a href="/prefix/tags/test/page-1.html">test</a>
     </li>
   </ul>
 </aside>
@@ -458,7 +459,7 @@ exports[`server page about.html 1`] = `
   <footer>
   <b>Koala</b><br />
   Static Website Generator<br />
-  <a href=\\"https://www.example.com/prefix/\\">https://www.example.com/prefix/</a>
+  <a href="https://www.example.com/prefix/">https://www.example.com/prefix/</a>
 </footer>
 </body>
 
@@ -469,34 +470,34 @@ exports[`server post test/test.html 1`] = `
 "<!DOCTYPE html>
 <html>
 <head>
-  <meta charset=\\"UTF-8\\" />
+  <meta charset="UTF-8" />
   <title>Test - Koala</title>
-  <meta name=\\"robots\\" content=\\"index, follow\\" />
-  <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0, user-scalable=yes\\" />
-  <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\" />
-  <link rel=\\"canonical\\" href=\\"https://www.example.com/prefix/test/test.html\\" />
-  <link rel=\\"stylesheet\\" type=\\"text/css\\" href=\\"/prefix/style.css\\" />
-  <link rel=\\"apple-touch-icon\\" href=\\"/prefix/images/logo-512.png\\" />
-  <link rel=\\"icon\\" sizes=\\"512x512\\" href=\\"/prefix/images/logo-512.png\\" />
-  <link rel=\\"shortcut icon\\" href=\\"/prefix/favicon.ico\\" />
-  <meta name=\\"description\\" content=\\"A simple static website generator\\" />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="canonical" href="https://www.example.com/prefix/test/test.html" />
+  <link rel="stylesheet" type="text/css" href="/prefix/style.css" />
+  <link rel="apple-touch-icon" href="/prefix/images/logo-512.png" />
+  <link rel="icon" sizes="512x512" href="/prefix/images/logo-512.png" />
+  <link rel="shortcut icon" href="/prefix/favicon.ico" />
+  <meta name="description" content="A simple static website generator" />
 </head>
 
 <body>
   <header>
-  <div class=\\"header-logo-panel\\">
-    <div class=\\"header-logo\\">
-      <div class=\\"header-image\\">
-        <a href=\\"/prefix/\\">
-          <img src=\\"/prefix/images/logo-128.png\\" alt=\\"Koala Logo\\" />
+  <div class="header-logo-panel">
+    <div class="header-logo">
+      <div class="header-image">
+        <a href="/prefix/">
+          <img src="/prefix/images/logo-128.png" alt="Koala Logo" />
         </a>
       </div>
-      <div class=\\"header-text\\">
-        <div class=\\"header-title\\">
-          <a href=\\"/prefix/\\">Koala</a>
+      <div class="header-text">
+        <div class="header-title">
+          <a href="/prefix/">Koala</a>
         </div>
-        <div class=\\"header-subtitle\\">
-          <a href=\\"/prefix/\\">Static Website Generator</a>
+        <div class="header-subtitle">
+          <a href="/prefix/">Static Website Generator</a>
         </div>
       </div>
     </div>
@@ -504,7 +505,7 @@ exports[`server post test/test.html 1`] = `
 
   <nav>
     <ul>
-      <li><a href=\\"/prefix/about.html\\">About</a></li>
+      <li><a href="/prefix/about.html">About</a></li>
     </ul>
   </nav>
 </header>
@@ -513,14 +514,14 @@ exports[`server post test/test.html 1`] = `
 
   <section>
     <h1>
-      <a href=\\"/prefix/test/test.html\\">Test</a>
+      <a href="/prefix/test/test.html">Test</a>
     </h1>
-    <div class=\\"post-date\\">10 June 2020</div>
-    <div class=\\"post-tags\\">
-      <div class=\\"post-tags-name\\">Tags: </div>
+    <div class="post-date">10 June 2020</div>
+    <div class="post-tags">
+      <div class="post-tags-name">Tags: </div>
       <ul>
         <li>
-          <a href=\\"/prefix/tags/test/page-1.html\\">test</a>
+          <a href="/prefix/tags/test/page-1.html">test</a>
         </li>
       </ul>
     </div>
@@ -537,20 +538,20 @@ exports[`server post test/test.html 1`] = `
   </section>
 
 </main>
-  <div class=\\"navigation\\">
+  <div class="navigation">
 </div>
 
 <aside>
   <h2>Archives</h2>
   <ul>
     <li>
-      <a href=\\"/prefix/archive/2020-06/page-1.html\\">June 2020</a>
+      <a href="/prefix/archive/2020-06/page-1.html">June 2020</a>
     </li>
     <li>
-      <a href=\\"/prefix/archive/2019-03/page-1.html\\">March 2019</a>
+      <a href="/prefix/archive/2019-03/page-1.html">March 2019</a>
     </li>
     <li>
-      <a href=\\"/prefix/archive/2019-01/page-1.html\\">January 2019</a>
+      <a href="/prefix/archive/2019-01/page-1.html">January 2019</a>
     </li>
   </ul>
 </aside>
@@ -559,16 +560,16 @@ exports[`server post test/test.html 1`] = `
   <h2>Tags</h2>
   <ul>
     <li>
-      <a href=\\"/prefix/tags/hello/page-1.html\\">hello</a>
+      <a href="/prefix/tags/hello/page-1.html">hello</a>
     </li>
     <li>
-      <a href=\\"/prefix/tags/intro/page-1.html\\">intro</a>
+      <a href="/prefix/tags/intro/page-1.html">intro</a>
     </li>
     <li>
-      <a href=\\"/prefix/tags/number/page-1.html\\">number</a>
+      <a href="/prefix/tags/number/page-1.html">number</a>
     </li>
     <li>
-      <a href=\\"/prefix/tags/test/page-1.html\\">test</a>
+      <a href="/prefix/tags/test/page-1.html">test</a>
     </li>
   </ul>
 </aside>
@@ -576,7 +577,7 @@ exports[`server post test/test.html 1`] = `
   <footer>
   <b>Koala</b><br />
   Static Website Generator<br />
-  <a href=\\"https://www.example.com/prefix/\\">https://www.example.com/prefix/</a>
+  <a href="https://www.example.com/prefix/">https://www.example.com/prefix/</a>
 </footer>
 </body>
 
@@ -587,34 +588,34 @@ exports[`server posts page-2.html 1`] = `
 "<!DOCTYPE html>
 <html>
 <head>
-  <meta charset=\\"UTF-8\\" />
+  <meta charset="UTF-8" />
   <title>Posts - Page 2 - Koala</title>
-  <meta name=\\"robots\\" content=\\"index, follow\\" />
-  <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0, user-scalable=yes\\" />
-  <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\" />
-  <link rel=\\"canonical\\" href=\\"https://www.example.com/prefix/posts/page-2.html\\" />
-  <link rel=\\"stylesheet\\" type=\\"text/css\\" href=\\"/prefix/style.css\\" />
-  <link rel=\\"apple-touch-icon\\" href=\\"/prefix/images/logo-512.png\\" />
-  <link rel=\\"icon\\" sizes=\\"512x512\\" href=\\"/prefix/images/logo-512.png\\" />
-  <link rel=\\"shortcut icon\\" href=\\"/prefix/favicon.ico\\" />
-  <meta name=\\"description\\" content=\\"A simple static website generator\\" />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="canonical" href="https://www.example.com/prefix/posts/page-2.html" />
+  <link rel="stylesheet" type="text/css" href="/prefix/style.css" />
+  <link rel="apple-touch-icon" href="/prefix/images/logo-512.png" />
+  <link rel="icon" sizes="512x512" href="/prefix/images/logo-512.png" />
+  <link rel="shortcut icon" href="/prefix/favicon.ico" />
+  <meta name="description" content="A simple static website generator" />
 </head>
 
 <body>
   <header>
-  <div class=\\"header-logo-panel\\">
-    <div class=\\"header-logo\\">
-      <div class=\\"header-image\\">
-        <a href=\\"/prefix/\\">
-          <img src=\\"/prefix/images/logo-128.png\\" alt=\\"Koala Logo\\" />
+  <div class="header-logo-panel">
+    <div class="header-logo">
+      <div class="header-image">
+        <a href="/prefix/">
+          <img src="/prefix/images/logo-128.png" alt="Koala Logo" />
         </a>
       </div>
-      <div class=\\"header-text\\">
-        <div class=\\"header-title\\">
-          <a href=\\"/prefix/\\">Koala</a>
+      <div class="header-text">
+        <div class="header-title">
+          <a href="/prefix/">Koala</a>
         </div>
-        <div class=\\"header-subtitle\\">
-          <a href=\\"/prefix/\\">Static Website Generator</a>
+        <div class="header-subtitle">
+          <a href="/prefix/">Static Website Generator</a>
         </div>
       </div>
     </div>
@@ -622,60 +623,60 @@ exports[`server posts page-2.html 1`] = `
 
   <nav>
     <ul>
-      <li><a href=\\"/prefix/about.html\\">About</a></li>
+      <li><a href="/prefix/about.html">About</a></li>
     </ul>
   </nav>
 </header>
   <main>
-  <div class=\\"pages\\">
+  <div class="pages">
     <h1>Posts</h1>
     <section>
       <h2>
-        <a href=\\"/prefix/post2.html\\">Post 2</a>
+        <a href="/prefix/post2.html">Post 2</a>
       </h2>
-      <div class=\\"post-date\\">2 January 2019</div>
+      <div class="post-date">2 January 2019</div>
       <p>
   Content 2
 </p>
-      <a href=\\"/prefix/post2.html\\">Read More</a>
+      <a href="/prefix/post2.html">Read More</a>
     </section>
     <section>
       <h2>
-        <a href=\\"/prefix/post1.html\\">Post 1</a>
+        <a href="/prefix/post1.html">Post 1</a>
       </h2>
-      <div class=\\"post-date\\">1 January 2019</div>
+      <div class="post-date">1 January 2019</div>
       <p>
   Content 1
 </p>
-      <a href=\\"/prefix/post1.html\\">Read More</a>
+      <a href="/prefix/post1.html">Read More</a>
     </section>
   </div>
-  <nav class=\\"pages-navigation\\">
-    <div class=\\"page-previous\\">
-      <a href=\\"/prefix/\\">&#8592; Previous Page</a>
+  <nav class="pages-navigation">
+    <div class="page-previous">
+      <a href="/prefix/">&#8592; Previous Page</a>
     </div>
-    <div class=\\"page-number\\">Page 2</div>
-    <div class=\\"page-next\\">
+    <div class="page-number">Page 2</div>
+    <div class="page-next">
     </div>
   </nav>
 
 
 
 </main>
-  <div class=\\"navigation\\">
+  <div class="navigation">
 </div>
 
 <aside>
   <h2>Archives</h2>
   <ul>
     <li>
-      <a href=\\"/prefix/archive/2020-06/page-1.html\\">June 2020</a>
+      <a href="/prefix/archive/2020-06/page-1.html">June 2020</a>
     </li>
     <li>
-      <a href=\\"/prefix/archive/2019-03/page-1.html\\">March 2019</a>
+      <a href="/prefix/archive/2019-03/page-1.html">March 2019</a>
     </li>
     <li>
-      <a href=\\"/prefix/archive/2019-01/page-1.html\\">January 2019</a>
+      <a href="/prefix/archive/2019-01/page-1.html">January 2019</a>
     </li>
   </ul>
 </aside>
@@ -684,16 +685,16 @@ exports[`server posts page-2.html 1`] = `
   <h2>Tags</h2>
   <ul>
     <li>
-      <a href=\\"/prefix/tags/hello/page-1.html\\">hello</a>
+      <a href="/prefix/tags/hello/page-1.html">hello</a>
     </li>
     <li>
-      <a href=\\"/prefix/tags/intro/page-1.html\\">intro</a>
+      <a href="/prefix/tags/intro/page-1.html">intro</a>
     </li>
     <li>
-      <a href=\\"/prefix/tags/number/page-1.html\\">number</a>
+      <a href="/prefix/tags/number/page-1.html">number</a>
     </li>
     <li>
-      <a href=\\"/prefix/tags/test/page-1.html\\">test</a>
+      <a href="/prefix/tags/test/page-1.html">test</a>
     </li>
   </ul>
 </aside>
@@ -701,7 +702,7 @@ exports[`server posts page-2.html 1`] = `
   <footer>
   <b>Koala</b><br />
   Static Website Generator<br />
-  <a href=\\"https://www.example.com/prefix/\\">https://www.example.com/prefix/</a>
+  <a href="https://www.example.com/prefix/">https://www.example.com/prefix/</a>
 </footer>
 </body>
 
@@ -712,34 +713,34 @@ exports[`server tags tags/hello/page-1.html 1`] = `
 "<!DOCTYPE html>
 <html>
 <head>
-  <meta charset=\\"UTF-8\\" />
+  <meta charset="UTF-8" />
   <title>Tag hello - Koala</title>
-  <meta name=\\"robots\\" content=\\"index, follow\\" />
-  <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0, user-scalable=yes\\" />
-  <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\" />
-  <link rel=\\"canonical\\" href=\\"https://www.example.com/prefix/tags/hello/page-1.html\\" />
-  <link rel=\\"stylesheet\\" type=\\"text/css\\" href=\\"/prefix/style.css\\" />
-  <link rel=\\"apple-touch-icon\\" href=\\"/prefix/images/logo-512.png\\" />
-  <link rel=\\"icon\\" sizes=\\"512x512\\" href=\\"/prefix/images/logo-512.png\\" />
-  <link rel=\\"shortcut icon\\" href=\\"/prefix/favicon.ico\\" />
-  <meta name=\\"description\\" content=\\"A simple static website generator\\" />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="canonical" href="https://www.example.com/prefix/tags/hello/page-1.html" />
+  <link rel="stylesheet" type="text/css" href="/prefix/style.css" />
+  <link rel="apple-touch-icon" href="/prefix/images/logo-512.png" />
+  <link rel="icon" sizes="512x512" href="/prefix/images/logo-512.png" />
+  <link rel="shortcut icon" href="/prefix/favicon.ico" />
+  <meta name="description" content="A simple static website generator" />
 </head>
 
 <body>
   <header>
-  <div class=\\"header-logo-panel\\">
-    <div class=\\"header-logo\\">
-      <div class=\\"header-image\\">
-        <a href=\\"/prefix/\\">
-          <img src=\\"/prefix/images/logo-128.png\\" alt=\\"Koala Logo\\" />
+  <div class="header-logo-panel">
+    <div class="header-logo">
+      <div class="header-image">
+        <a href="/prefix/">
+          <img src="/prefix/images/logo-128.png" alt="Koala Logo" />
         </a>
       </div>
-      <div class=\\"header-text\\">
-        <div class=\\"header-title\\">
-          <a href=\\"/prefix/\\">Koala</a>
+      <div class="header-text">
+        <div class="header-title">
+          <a href="/prefix/">Koala</a>
         </div>
-        <div class=\\"header-subtitle\\">
-          <a href=\\"/prefix/\\">Static Website Generator</a>
+        <div class="header-subtitle">
+          <a href="/prefix/">Static Website Generator</a>
         </div>
       </div>
     </div>
@@ -747,18 +748,18 @@ exports[`server tags tags/hello/page-1.html 1`] = `
 
   <nav>
     <ul>
-      <li><a href=\\"/prefix/about.html\\">About</a></li>
+      <li><a href="/prefix/about.html">About</a></li>
     </ul>
   </nav>
 </header>
   <main>
-  <div class=\\"pages\\">
+  <div class="pages">
     <h1>Tag hello</h1>
     <section>
       <h2>
-        <a href=\\"/prefix/hello-world.html\\">Hello World</a>
+        <a href="/prefix/hello-world.html">Hello World</a>
       </h2>
-      <div class=\\"post-date\\">20 June 2020</div>
+      <div class="post-date">20 June 2020</div>
       <p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus orci ac tortor consequat, nec ultrices metus
   dictum. Cras non rutrum dui, ac euismod lacus. Fusce sit amet purus justo. Ut rutrum, metus porttitor pretium aliquet,
@@ -768,34 +769,34 @@ exports[`server tags tags/hello/page-1.html 1`] = `
   varius.
 </p>
 
-      <a href=\\"/prefix/hello-world.html\\">Read More</a>
+      <a href="/prefix/hello-world.html">Read More</a>
     </section>
   </div>
-  <nav class=\\"pages-navigation\\">
-    <div class=\\"page-previous\\">
+  <nav class="pages-navigation">
+    <div class="page-previous">
     </div>
-    <div class=\\"page-number\\">Page 1</div>
-    <div class=\\"page-next\\">
+    <div class="page-number">Page 1</div>
+    <div class="page-next">
     </div>
   </nav>
 
 
 
 </main>
-  <div class=\\"navigation\\">
+  <div class="navigation">
 </div>
 
 <aside>
   <h2>Archives</h2>
   <ul>
     <li>
-      <a href=\\"/prefix/archive/2020-06/page-1.html\\">June 2020</a>
+      <a href="/prefix/archive/2020-06/page-1.html">June 2020</a>
     </li>
     <li>
-      <a href=\\"/prefix/archive/2019-03/page-1.html\\">March 2019</a>
+      <a href="/prefix/archive/2019-03/page-1.html">March 2019</a>
     </li>
     <li>
-      <a href=\\"/prefix/archive/2019-01/page-1.html\\">January 2019</a>
+      <a href="/prefix/archive/2019-01/page-1.html">January 2019</a>
     </li>
   </ul>
 </aside>
@@ -804,16 +805,16 @@ exports[`server tags tags/hello/page-1.html 1`] = `
   <h2>Tags</h2>
   <ul>
     <li>
-      <a href=\\"/prefix/tags/hello/page-1.html\\">hello</a>
+      <a href="/prefix/tags/hello/page-1.html">hello</a>
     </li>
     <li>
-      <a href=\\"/prefix/tags/intro/page-1.html\\">intro</a>
+      <a href="/prefix/tags/intro/page-1.html">intro</a>
     </li>
     <li>
-      <a href=\\"/prefix/tags/number/page-1.html\\">number</a>
+      <a href="/prefix/tags/number/page-1.html">number</a>
     </li>
     <li>
-      <a href=\\"/prefix/tags/test/page-1.html\\">test</a>
+      <a href="/prefix/tags/test/page-1.html">test</a>
     </li>
   </ul>
 </aside>
@@ -821,7 +822,7 @@ exports[`server tags tags/hello/page-1.html 1`] = `
   <footer>
   <b>Koala</b><br />
   Static Website Generator<br />
-  <a href=\\"https://www.example.com/prefix/\\">https://www.example.com/prefix/</a>
+  <a href="https://www.example.com/prefix/">https://www.example.com/prefix/</a>
 </footer>
 </body>
 
