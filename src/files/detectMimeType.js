@@ -17,6 +17,9 @@ function detectMimeType(pathname) {
   if (/.*\.js/.test(pathname)) {
     return 'text/javascript';
   }
+  if (/.*\.xsl/.test(pathname)) {
+    return 'text/xml';
+  }
 
   console.warn(`Cannot detect MIME type for ${pathname}`);
   return 'application/octet-stream';
