@@ -1,4 +1,4 @@
-const Joi = require('@hapi/joi');
+const Joi = require('joi');
 const configurationSchema = require('./configurationSchema');
 
 module.exports = Joi.object({
