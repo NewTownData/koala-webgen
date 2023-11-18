@@ -18,7 +18,7 @@ module.exports = (context, pathComponents) => {
     const postContent = loadPost(
       encodePath(context, pathComponents),
       loadTextFile(postFile),
-      false
+      false,
     );
 
     return {

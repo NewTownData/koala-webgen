@@ -16,8 +16,8 @@ const args = process.argv.slice(2);
 if (args.length === 0) {
   console.error(
     `No argument specified. Valid arguments: ${validArguments.reduce((p, c) =>
-      p ? `${p}, ${c}` : c
-    )}`
+      p ? `${p}, ${c}` : c,
+    )}`,
   );
   process.exit(1);
 }
@@ -39,8 +39,8 @@ switch (command) {
   default:
     console.error(
       `Invalid argument '${command}' specified. Valid arguments: ${validArguments.reduce(
-        (prev, current) => (prev ? `${prev}, ${current}` : current)
-      )}`
+        (prev, current) => (prev ? `${prev}, ${current}` : current),
+      )}`,
     );
     process.exit(1);
 }

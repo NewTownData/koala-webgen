@@ -18,7 +18,7 @@ function executeTemplate(context, pageContext) {
     helpers: {
       include: (source) => {
         const includeContent = loadTextFile(
-          path.join(themePath, 'components', `${source}.html`)
+          path.join(themePath, 'components', `${source}.html`),
         );
         const includeTemplate = Handlebars.compile(includeContent);
         return includeTemplate(pageContext, options);
@@ -34,7 +34,7 @@ function executeTemplate(context, pageContext) {
   };
 
   const template = Handlebars.compile(
-    loadTextFile(path.join(themePath, 'index.html'))
+    loadTextFile(path.join(themePath, 'index.html')),
   );
   return template(pageContext, options);
 }

@@ -4,7 +4,7 @@ const tagsSchema = Joi.array().items(
   Joi.object({
     name: Joi.string().required(),
     link: Joi.string().required(),
-  }).required()
+  }).required(),
 );
 
 const pageSchema = Joi.object({
@@ -48,7 +48,7 @@ module.exports = Joi.object({
         Joi.object({
           name: Joi.string().required(),
           link: Joi.string().required(),
-        }).required()
+        }).required(),
       )
       .required(),
     archive: Joi.array()
@@ -56,7 +56,7 @@ module.exports = Joi.object({
         Joi.object({
           name: Joi.string().required(),
           link: Joi.string().required(),
-        }).required()
+        }).required(),
       )
       .required(),
     tags: tagsSchema.required(),

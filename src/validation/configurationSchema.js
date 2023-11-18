@@ -15,7 +15,7 @@ module.exports = Joi.object({
       Joi.object({
         name: Joi.string().required(),
         link: Joi.string().required(),
-      }).required()
+      }).required(),
     )
     .required(),
   theme: Joi.string().required(),

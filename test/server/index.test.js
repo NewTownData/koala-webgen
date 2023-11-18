@@ -108,7 +108,7 @@ describe('server', () => {
     const response = await fetch(`${urlPrefix}/`);
     expect(response.statusCode).toBe(500);
     expect(utf8(response.data)).toEqual(
-      "Internal Server Error\nError: Unsupported response type 'xyz' for /"
+      "Internal Server Error\nError: Unsupported response type 'xyz' for /",
     );
 
     expect(execute).toHaveBeenCalledWith(websitePath, '/');

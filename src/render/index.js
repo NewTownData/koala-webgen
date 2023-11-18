@@ -8,7 +8,7 @@ function renderHtml(context, content, requestPath) {
 
   const tags = loadTags(context).map((tag) => convertTag(context, tag));
   const archive = loadDates(context).map((date) =>
-    convertArchive(context, date)
+    convertArchive(context, date),
   );
 
   let pageTitle = `${title} - ${subtitle}`;

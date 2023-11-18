@@ -5,7 +5,7 @@ describe('extractDescription', () => {
     expect(extractDescription('')).toBe('');
     expect(extractDescription('Test \nmessage')).toBe('Test message');
     expect(extractDescription('<b>Test</b><p>message</p>')).toBe(
-      'Test message'
+      'Test message',
     );
   });
 });

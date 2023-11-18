@@ -17,7 +17,7 @@ module.exports = (context, pathComponents) => {
     const postContent = loadPost(
       encodePath(context, pathComponents),
       loadTextFile(pageFile),
-      false
+      false,
     );
     delete postContent.tags;
 

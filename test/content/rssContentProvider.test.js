@@ -30,7 +30,7 @@ describe('rssContentProvider', () => {
           feedSize: 2,
         },
       },
-      ['feed.rss.xml']
+      ['feed.rss.xml'],
     );
     expect(result).toEqual({
       headers: {
@@ -61,7 +61,7 @@ describe('rssContentProvider', () => {
           feedSize: 100,
         },
       },
-      ['feed.rss.xml']
+      ['feed.rss.xml'],
     );
     expect(result).toEqual({
       headers: {

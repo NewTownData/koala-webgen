@@ -34,7 +34,7 @@ function copyPostsWithPathComponents(
   context,
   fromPath,
   toPath,
-  pathComponents
+  pathComponents,
 ) {
   const items = fs.readdirSync(fromPath, {
     encoding: 'utf-8',
@@ -55,7 +55,7 @@ function copyPostsWithPathComponents(
         context,
         path.join(fromPath, f.name),
         path.join(toPath, f.name),
-        [...pathComponents, f.name]
+        [...pathComponents, f.name],
       );
     });
 }
@@ -128,7 +128,7 @@ function copyPostsByDate(date, context, destination) {
     const dir = path.join(
       destination,
       'archive',
-      `${year}-${convertMonth(month)}`
+      `${year}-${convertMonth(month)}`,
     );
     if (!fs.existsSync(dir)) {
       fs.mkdirSync(dir, { recursive: true });
@@ -144,7 +144,7 @@ function copyFeed(context, toPath) {
 
   const { payload } = executeWithContext(
     context,
-    `${websitePath}/feed.rss.xml`
+    `${websitePath}/feed.rss.xml`,
   );
   fs.writeFileSync(path.join(toPath, 'feed.rss.xml'), payload);
 }

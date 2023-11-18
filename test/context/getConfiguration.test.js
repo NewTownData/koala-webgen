@@ -4,7 +4,7 @@ const getConfiguration = require('../../src/context/getConfiguration');
 describe('getConfiguration', () => {
   it('valid', () => {
     expect(
-      getConfiguration(path.join(__dirname, '__resources__', 'valid_website'))
+      getConfiguration(path.join(__dirname, '__resources__', 'valid_website')),
     ).toEqual({
       theme: 'default',
       title: 'Title',
@@ -27,7 +27,9 @@ describe('getConfiguration', () => {
 
   it('invalid', () => {
     expect(() =>
-      getConfiguration(path.join(__dirname, '__resources__', 'invalid_website'))
+      getConfiguration(
+        path.join(__dirname, '__resources__', 'invalid_website'),
+      ),
     ).toThrow();
   });
 });

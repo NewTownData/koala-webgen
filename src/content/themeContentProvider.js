@@ -16,7 +16,7 @@ module.exports = (context, pathComponents) => {
       type: 'file',
       headers: {
         'Content-Type': detectMimeType(
-          pathComponents[pathComponents.length - 1]
+          pathComponents[pathComponents.length - 1],
         ),
       },
       payload: fs.readFileSync(themeFile),

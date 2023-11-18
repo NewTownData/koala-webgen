@@ -1,7 +1,7 @@
 function loadPost(postPath, content, trim) {
   const date =
     /<!-- date: ([0-9]{4})-([0-9]{2})-([0-9]{2}) ([0-9]{2}):([0-9]{2}):([0-9]{2}) -->/.exec(
-      content
+      content,
     );
   const tags = /<!-- tags: (.*?) -->/.exec(content);
   const title = /<!-- title: (.*?) -->/.exec(content);
@@ -29,8 +29,8 @@ function loadPost(postPath, content, trim) {
         parseInt(date[3], 10),
         parseInt(date[4], 10),
         parseInt(date[5], 10),
-        parseInt(date[6], 10)
-      )
+        parseInt(date[6], 10),
+      ),
     ),
     tags: tags ? tags[1].split(',') : [],
     body: result,

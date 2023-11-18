@@ -10,7 +10,7 @@ describe('xmlEscape', () => {
     expect(xmlEscape('"')).toBe('&quot;');
     expect(xmlEscape("'")).toBe('&apos;');
     expect(xmlEscape('Test<"message">&blog\'test')).toBe(
-      'Test&lt;&quot;message&quot;&gt;&amp;blog&apos;test'
+      'Test&lt;&quot;message&quot;&gt;&amp;blog&apos;test',
     );
   });
 });

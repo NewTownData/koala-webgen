@@ -17,7 +17,7 @@ describe('contextSchema', () => {
 
   it('fails', () => {
     expect(
-      responseSchema.validate({ ...exampleResponse, type: undefined }).error
+      responseSchema.validate({ ...exampleResponse, type: undefined }).error,
     ).not.toBeUndefined();
   });
 

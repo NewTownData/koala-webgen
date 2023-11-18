@@ -3,7 +3,7 @@ const { loadTextFile } = require('../../src/files');
 const loadPost = require('../../src/posts/loadPost');
 
 const testFile = loadTextFile(
-  path.join(__dirname, '__resources__', 'posts', 'test_post.html')
+  path.join(__dirname, '__resources__', 'posts', 'test_post.html'),
 );
 
 describe('loadPost', () => {

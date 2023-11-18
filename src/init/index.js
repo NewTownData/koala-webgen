@@ -13,7 +13,7 @@ function copy(fromPath, toPath) {
   files
     .filter((f) => f.isFile())
     .forEach((f) =>
-      fs.copyFileSync(path.join(fromPath, f.name), path.join(toPath, f.name))
+      fs.copyFileSync(path.join(fromPath, f.name), path.join(toPath, f.name)),
     );
 
   files

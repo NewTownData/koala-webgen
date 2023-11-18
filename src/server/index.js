@@ -21,7 +21,7 @@ function startServer(websiteRoot, port) {
       const responseValidationResult = responseSchema.validate(responseObject);
       if (responseValidationResult.error) {
         throw new Error(
-          `Failed to validate response ${responseValidationResult.error}`
+          `Failed to validate response ${responseValidationResult.error}`,
         );
       }
 
@@ -48,7 +48,7 @@ function startServer(websiteRoot, port) {
             'Content-Type': 'text/plain; charset=utf-8',
           });
           response.end(
-            `Internal Server Error\nError: Unsupported response type '${type}' for ${requestPath}`
+            `Internal Server Error\nError: Unsupported response type '${type}' for ${requestPath}`,
           );
           break;
       }

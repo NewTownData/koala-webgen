@@ -72,7 +72,7 @@ describe('build', () => {
       '2020-06',
     ]);
     expect(
-      fs.readdirSync(path.join(destination, 'archive', '2019-03'))
+      fs.readdirSync(path.join(destination, 'archive', '2019-03')),
     ).toEqual(['page-1.html']);
     expect(fs.readdirSync(path.join(destination, 'tags'))).toEqual([
       'hello',
@@ -91,7 +91,7 @@ describe('build', () => {
     ]);
 
     expect(
-      utf8(fs.readFileSync(path.join(destination, 'feed.rss.xml')))
+      utf8(fs.readFileSync(path.join(destination, 'feed.rss.xml'))),
     ).toMatchSnapshot();
   });
 });

@@ -12,7 +12,7 @@ describe('createFeed', () => {
         url: 'https://www.example.com',
         websitePath: '/',
       },
-      publishedDate
+      publishedDate,
     );
 
     feed.addItem({

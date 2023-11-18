@@ -133,7 +133,7 @@ describe('server', () => {
 
   it('archive /archive/2019-03/page-1.html', async () => {
     const response = await fetch(
-      `${urlPrefix}/prefix/archive/2019-03/page-1.html`
+      `${urlPrefix}/prefix/archive/2019-03/page-1.html`,
     );
     expect(response.statusCode).toBe(200);
     expect(response.headers['content-type']).toBe('text/html; charset=utf-8');
@@ -145,7 +145,7 @@ describe('server', () => {
     expect(response.statusCode).toBe(500);
 
     expect(utf8(response.data)).toEqual(
-      'Internal Server Error\nError: URI malformed'
+      'Internal Server Error\nError: URI malformed',
     );
   });
 

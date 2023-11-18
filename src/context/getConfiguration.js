@@ -15,7 +15,7 @@ function getConfiguration(websiteRoot) {
     return configuration;
   } catch (e) {
     throw new Error(
-      `Failed to load configuration for ${websiteRoot}: ${e.message}`
+      `Failed to load configuration for ${websiteRoot}: ${e.message}`,
     );
   }
 }

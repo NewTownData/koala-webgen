@@ -46,7 +46,7 @@ describe('template', () => {
     };
 
     expect(executeTemplate(context, pageContext)).toEqual(
-      '<b>Hello Post - Koala</b>\n<b>Bye world</b><i>2020-02-20</i>'
+      '<b>Hello Post - Koala</b>\n<b>Bye world</b><i>2020-02-20</i>',
     );
   });
 
@@ -61,7 +61,7 @@ describe('template', () => {
     };
 
     expect(executeTemplate(context, pageContext)).toEqual(
-      '<b>Hello Post - Koala</b>\n<b>Bye world</b><i>20 February 2020</i>'
+      '<b>Hello Post - Koala</b>\n<b>Bye world</b><i>20 February 2020</i>',
     );
   });
 });

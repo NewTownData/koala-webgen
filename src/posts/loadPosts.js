@@ -19,8 +19,8 @@ function loadPostFiles(prefix, currentPath) {
       loadPost(
         `${prefix}${encodeURIComponent(name)}`,
         loadTextFile(path.join(currentPath, name)),
-        true
-      )
+        true,
+      ),
     )
     .forEach((item) => result.push(item));
 
@@ -30,8 +30,8 @@ function loadPostFiles(prefix, currentPath) {
     .map((name) =>
       loadPostFiles(
         `${prefix}${encodeURIComponent(name)}/`,
-        path.join(currentPath, name)
-      )
+        path.join(currentPath, name),
+      ),
     )
     .forEach((arr) => result.push(...arr));
 
@@ -45,7 +45,7 @@ function loadPosts(context) {
 
   const items = loadPostFiles(websitePath, posts);
   return items.sort(
-    (post1, post2) => post2.date.getTime() - post1.date.getTime()
+    (post1, post2) => post2.date.getTime() - post1.date.getTime(),
   );
 }
 

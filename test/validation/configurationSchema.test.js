@@ -22,7 +22,7 @@ const exampleConfiguration = {
 describe('configurationSchema', () => {
   it('validates', () => {
     expect(
-      configurationSchema.validate(exampleConfiguration).error
+      configurationSchema.validate(exampleConfiguration).error,
     ).toBeUndefined();
   });
 
@@ -31,7 +31,7 @@ describe('configurationSchema', () => {
       const configuration = { ...exampleConfiguration };
       configuration[key] = undefined;
       expect(
-        configurationSchema.validate(configuration).error
+        configurationSchema.validate(configuration).error,
       ).not.toBeUndefined();
     });
   });

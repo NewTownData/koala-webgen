@@ -19,12 +19,12 @@ function loadPostsByDate(context, year, month) {
   const posts = loadPosts(context).filter(
     (post) =>
       post.date.getUTCFullYear() === year &&
-      post.date.getUTCMonth() + 1 === month
+      post.date.getUTCMonth() + 1 === month,
   );
   return {
     title: `Archive ${format(
       new Date(Date.UTC(year, month - 1, 1)),
-      'MMMM yyyy'
+      'MMMM yyyy',
     )}`,
     items: paginate(context, posts, postsByDateUrlFactory({ year, month })),
   };
@@ -59,7 +59,7 @@ function loadDates(context) {
       month: post.date.getUTCMonth() + 1,
     }))
     .sort((d1, d2) =>
-      d1.year === d2.year ? d2.month - d1.month : d2.year - d1.year
+      d1.year === d2.year ? d2.month - d1.month : d2.year - d1.year,
     )
     .filter((d) => {
       const hash = `${d.year}-${100 * d.month}`;

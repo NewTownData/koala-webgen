@@ -9,7 +9,7 @@ function executeWithContext(context, requestPath) {
 
   if (requestPath.indexOf(websitePath) !== 0) {
     console.warn(
-      `Request ${requestPath} is outside of website path ${websitePath}`
+      `Request ${requestPath} is outside of website path ${websitePath}`,
     );
     return {
       type: '302',
