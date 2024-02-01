@@ -30,6 +30,8 @@ function executeTemplate(context, pageContext) {
           throw new Error(`Cannot print date ${source}: ${e.message}`);
         }
       },
+      equals: (left, right) => left === right,
+      not: (source) => !source,
     },
   };
 

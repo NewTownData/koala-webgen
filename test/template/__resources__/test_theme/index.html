@@ -1,2 +1,6 @@
 {{{include "test"}}}
 <b>Bye {{{content.post.body}}}</b><i>{{printDate content.post.date}}</i>
+{{#if (equals page.currentPath "/x/post.html")}}<p>Post</p>{{/if}}
+{{#if (equals page.currentPath "/x/")}}<p>Index</p>{{/if}}
+{{#if (not (equals page.currentPath "/x/post.html"))}}<p>Not Post</p>{{/if}}
+{{#if (not (equals page.currentPath "/x/"))}}<p>Not Index</p>{{/if}}
