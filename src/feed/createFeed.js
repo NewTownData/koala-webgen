@@ -1,4 +1,3 @@
-const extractDescription = require('./extractDescription');
 const xmlEscape = require('./xmlEscape');
 
 module.exports = function (configuration, publishedDate) {
@@ -15,14 +14,13 @@ module.exports = function (configuration, publishedDate) {
   let items = '';
 
   function addItem(post) {
-    const { title: postTitle, body, link, date } = post;
+    const { title: postTitle, description: postDescription, link, date } = post;
     const postUrl = `${url}${link}`;
-    const content = extractDescription(body);
 
     items += `
     <item>
       <title>${xmlEscape(postTitle)}</title>
-      <description>${xmlEscape(content)}</description>
+      <description>${xmlEscape(postDescription)}</description>
       <link>${xmlEscape(postUrl)}</link>
       <guid>${xmlEscape(postUrl)}</guid>
       <pubDate>${xmlEscape(date.toUTCString())}</pubDate>

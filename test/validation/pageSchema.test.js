@@ -2,6 +2,7 @@ const pageSchema = require('../../src/validation/pageSchema');
 
 const exampleContentPage = {
   title: 'Page',
+  description: 'Text',
   date: new Date(),
   body: '<p>Text</p>',
   link: 'page.html',
@@ -9,6 +10,7 @@ const exampleContentPage = {
 
 const exampleContentPost = {
   title: 'Post',
+  description: 'Text',
   date: new Date(),
   tags: [
     { name: 'x', link: '/tags/x/page-1.html' },
@@ -24,6 +26,7 @@ const exampleContentPosts = {
     items: [
       {
         title: 'Post',
+        description: 'Text',
         date: new Date(),
         tags: ['x', 'y'],
         body: '<p>Text</p>',

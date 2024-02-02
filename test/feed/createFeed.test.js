@@ -17,6 +17,7 @@ describe('createFeed', () => {
 
     feed.addItem({
       title: 'Post 1',
+      description: 'Post 1 summary',
       link: '/post1.html',
       date: new Date(Date.UTC(2020, 2, 15, 16, 17, 50)),
       body: '<p>Post 1 summary</p>',
@@ -24,6 +25,7 @@ describe('createFeed', () => {
 
     feed.addItem({
       title: 'Post 2',
+      description: 'Post 2 summary',
       link: '/post2.html',
       date: new Date(Date.UTC(2020, 1, 15, 16, 17, 50)),
       body: 'Post 2 <i>summary</i>',

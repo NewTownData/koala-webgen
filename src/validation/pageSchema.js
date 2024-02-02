@@ -9,6 +9,7 @@ const tagsSchema = Joi.array().items(
 
 const pageSchema = Joi.object({
   title: Joi.string().required(),
+  description: Joi.string().required(),
   date: Joi.date().required(),
   link: Joi.string().required(),
   body: Joi.string().required(),
@@ -16,6 +17,7 @@ const pageSchema = Joi.object({
 
 const postSchema = Joi.object({
   title: Joi.string().required(),
+  description: Joi.string().required(),
   date: Joi.date().required(),
   link: Joi.string().required(),
   body: Joi.string().required(),
@@ -24,6 +26,7 @@ const postSchema = Joi.object({
 
 const postItemSchema = Joi.object({
   title: Joi.string().required(),
+  description: Joi.string().required(),
   date: Joi.date().required(),
   link: Joi.string().required(),
   body: Joi.string().required(),

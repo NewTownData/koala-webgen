@@ -17,6 +17,7 @@ describe('loadPosts', () => {
     expect(loadPosts(context)).toEqual([
       {
         body: '<p>Paragraph A</p>',
+        description: 'Paragraph A',
         date: new Date('2020-07-10T10:45:00Z'),
         tags: ['tag3'],
         title: 'Second post',
@@ -24,6 +25,7 @@ describe('loadPosts', () => {
       },
       {
         body: '<p>Paragraph 1</p>\n',
+        description: 'Paragraph 1',
         date: new Date('2020-06-10T10:45:00Z'),
         tags: ['tag1', 'tag2'],
         title: 'Test title',

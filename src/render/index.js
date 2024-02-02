@@ -12,10 +12,13 @@ function renderHtml(context, content, requestPath) {
   );
 
   let pageTitle = `${title} - ${subtitle}`;
+  let pageDescription = configuration.description;
   if (content.post) {
     pageTitle = `${content.post.title} - ${title}`;
+    pageDescription = content.post.description;
   } else if (content.page) {
     pageTitle = `${content.page.title} - ${title}`;
+    pageDescription = content.page.description;
   } else if (content.posts && requestPath !== websitePath) {
     if (content.posts.pagination.pageNumber > 1) {
       pageTitle = `${content.posts.title} - Page ${content.posts.pagination.pageNumber} - ${title}`;
@@ -29,7 +32,7 @@ function renderHtml(context, content, requestPath) {
     page: {
       title: configuration.title,
       subtitle: configuration.subtitle,
-      description: configuration.description,
+      description: pageDescription,
       keywords: configuration.keywords,
       url: configuration.url,
       websitePath: configuration.websitePath,
