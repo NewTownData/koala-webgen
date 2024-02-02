@@ -375,7 +375,7 @@ exports[`server page about.html 1`] = `
   <link rel="apple-touch-icon" href="/prefix/images/logo-512.png" />
   <link rel="icon" sizes="512x512" href="/prefix/images/logo-512.png" />
   <link rel="shortcut icon" href="/prefix/favicon.ico" />
-  <meta name="description" content="A simple static website generator" />
+  <meta name="description" content="The project aims to create simple to use, scalable and fast static website generator. More info at GitHub" />
 </head>
 
 <body>
@@ -480,7 +480,7 @@ exports[`server post test/test.html 1`] = `
   <link rel="apple-touch-icon" href="/prefix/images/logo-512.png" />
   <link rel="icon" sizes="512x512" href="/prefix/images/logo-512.png" />
   <link rel="shortcut icon" href="/prefix/favicon.ico" />
-  <meta name="description" content="A simple static website generator" />
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus orci ac tortor consequat, nec ultrices metus dictum. Cras non rutrum dui, ac euismod lacus. Fusce sit amet purus justo. Ut rutrum, metus porttitor pretium aliquet, diam dolor fermentum nibh, tempus pretium mi justo in velit. Vestibulum porttitor erat ut congue accumsan." />
 </head>
 
 <body>
