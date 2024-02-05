@@ -58,6 +58,7 @@ describe('build', () => {
       'post4.html',
       'post5.html',
       'posts',
+      'sitemap.txt',
       'style.css',
       'tags',
       'test',
@@ -92,6 +93,10 @@ describe('build', () => {
 
     expect(
       utf8(fs.readFileSync(path.join(destination, 'feed.rss.xml'))),
+    ).toMatchSnapshot();
+
+    expect(
+      utf8(fs.readFileSync(path.join(destination, 'sitemap.txt'))),
     ).toMatchSnapshot();
   });
 });

@@ -62,3 +62,15 @@ exports[`build works 1`] = `
   </channel>
 </rss>"
 `;
+
+exports[`build works 2`] = `
+"https://www.example.com/
+https://www.example.com/about.html
+https://www.example.com/hello-world.html
+https://www.example.com/post1.html
+https://www.example.com/post2.html
+https://www.example.com/post3.html
+https://www.example.com/post4.html
+https://www.example.com/post5.html
+https://www.example.com/test/test.html"
+`;

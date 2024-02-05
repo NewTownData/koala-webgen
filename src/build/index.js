@@ -19,71 +19,6 @@ function ensureParentExists(filePath) {
   }
 }
 
-function copyPost(context, pathComponents, toFile) {
-  if (fs.existsSync(toFile)) {
-    console.warn(`Skipping already created file ${toFile}`);
-    return;
-  }
-
-  const requestPath = encodePath(context, pathComponents);
-  const { payload } = executeWithContext(context, requestPath);
-  fs.writeFileSync(toFile, payload);
-}
-
-function copyPostsWithPathComponents(
-  context,
-  fromPath,
-  toPath,
-  pathComponents,
-) {
-  const items = fs.readdirSync(fromPath, {
-    encoding: 'utf-8',
-    withFileTypes: true,
-  });
-
-  items
-    .filter((f) => f.isFile() && /.*\.html/.test(f.name))
-    .forEach((f) => {
-      ensureParentExists(path.join(toPath, f.name));
-      copyPost(context, [...pathComponents, f.name], path.join(toPath, f.name));
-    });
-
-  items
-    .filter((f) => f.isDirectory())
-    .forEach((f) => {
-      copyPostsWithPathComponents(
-        context,
-        path.join(fromPath, f.name),
-        path.join(toPath, f.name),
-        [...pathComponents, f.name],
-      );
-    });
-}
-
-function copyPosts(context, fromPath, toPath) {
-  copyPostsWithPathComponents(context, fromPath, toPath, []);
-}
-
-function copyAssets(fromPath, toPath) {
-  const items = fs.readdirSync(fromPath, {
-    encoding: 'utf-8',
-    withFileTypes: true,
-  });
-
-  items
-    .filter((f) => f.isFile() && !/.*\.html/.test(f.name))
-    .forEach((f) => {
-      ensureParentExists(path.join(toPath, f.name));
-      fs.copyFileSync(path.join(fromPath, f.name), path.join(toPath, f.name));
-    });
-
-  items
-    .filter((f) => f.isDirectory())
-    .forEach((f) => {
-      copyAssets(path.join(fromPath, f.name), path.join(toPath, f.name));
-    });
-}
-
 function copyAllPosts(context, destination) {
   const { items } = loadAllPosts(context);
   for (let i = 0; i < items.length; i += 1) {
@@ -142,11 +77,97 @@ function copyFeed(context, toPath) {
   const { configuration } = context;
   const { websitePath } = configuration;
 
-  const { payload } = executeWithContext(
-    context,
-    `${websitePath}/feed.rss.xml`,
-  );
+  const { payload } = executeWithContext(context, `${websitePath}feed.rss.xml`);
   fs.writeFileSync(path.join(toPath, 'feed.rss.xml'), payload);
+}
+
+function copyAssets(fromPath, toPath) {
+  const items = fs.readdirSync(fromPath, {
+    encoding: 'utf-8',
+    withFileTypes: true,
+  });
+
+  items
+    .filter((f) => f.isFile() && !/.*\.html/.test(f.name))
+    .forEach((f) => {
+      ensureParentExists(path.join(toPath, f.name));
+      fs.copyFileSync(path.join(fromPath, f.name), path.join(toPath, f.name));
+    });
+
+  items
+    .filter((f) => f.isDirectory())
+    .forEach((f) => {
+      copyAssets(path.join(fromPath, f.name), path.join(toPath, f.name));
+    });
+}
+
+class WebsiteBuilder {
+  constructor(context) {
+    const { configuration } = context;
+    const { websitePath } = configuration;
+    this.websitePaths = [websitePath];
+  }
+
+  copyPost(context, pathComponents, toFile) {
+    if (fs.existsSync(toFile)) {
+      console.warn(`Skipping already created file ${toFile}`);
+      return;
+    }
+
+    const requestPath = encodePath(context, pathComponents);
+    const { payload } = executeWithContext(context, requestPath);
+    fs.writeFileSync(toFile, payload);
+    this.websitePaths.push(requestPath);
+  }
+
+  copyPostsWithPathComponents(context, fromPath, toPath, pathComponents) {
+    const items = fs.readdirSync(fromPath, {
+      encoding: 'utf-8',
+      withFileTypes: true,
+    });
+
+    items
+      .filter((f) => f.isFile() && /.*\.html/.test(f.name))
+      .forEach((f) => {
+        ensureParentExists(path.join(toPath, f.name));
+        this.copyPost(
+          context,
+          [...pathComponents, f.name],
+          path.join(toPath, f.name),
+        );
+      });
+
+    items
+      .filter((f) => f.isDirectory())
+      .forEach((f) => {
+        this.copyPostsWithPathComponents(
+          context,
+          path.join(fromPath, f.name),
+          path.join(toPath, f.name),
+          [...pathComponents, f.name],
+        );
+      });
+  }
+
+  copyPosts(context, fromPath, toPath) {
+    this.copyPostsWithPathComponents(context, fromPath, toPath, []);
+  }
+}
+
+function copySiteMap(websitePaths, context, toPath) {
+  const { configuration } = context;
+  const { url } = configuration;
+
+  let siteMapContent = '';
+  websitePaths.forEach((page) => {
+    if (siteMapContent !== '') {
+      siteMapContent += '\n';
+    }
+
+    siteMapContent += `${url}${page}`;
+  });
+
+  fs.writeFileSync(path.join(toPath, 'sitemap.txt'), siteMapContent);
 }
 
 function build(websiteRoot, destination) {
@@ -182,16 +203,20 @@ function build(websiteRoot, destination) {
     },
   } = context;
 
+  const websiteBuilder = new WebsiteBuilder(context);
+
   // pages
-  copyPosts(context, pagesPath, destination);
+  websiteBuilder.copyPosts(context, pagesPath, destination);
 
   // posts
-  copyPosts(context, postsPath, destination);
+  websiteBuilder.copyPosts(context, postsPath, destination);
 
   copyAssets(staticPath, destination);
   copyAssets(themePath, destination);
 
   copyFeed(context, destination);
+
+  copySiteMap(websiteBuilder.websitePaths, context, destination);
 }
 
 module.exports = build;
